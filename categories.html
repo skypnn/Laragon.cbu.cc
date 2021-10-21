@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Categories | Laragon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="content-type" content="text/html; charset=UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta property="og:site_name" content="Laragon">
+	<meta name="keywords">
+	<meta name="msapplication-badge" content="frequency=30; polling-uri=https://forum.laragon.org/sitemap.xml">
+	<meta name="msapplication-square150x150logo">
+	<meta name="title" content="Laragon">
+	<meta name="description">
+	<meta property="og:title" content="Categories">
+	<meta property="og:type" content="website">
+	<link rel="stylesheet" type="text/css" href="static/css/stylesheet.css">
+	
+	<link rel="icon" type="image/x-icon" href="https://forum.laragon.org/favicon.ico?0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="manifest" href="https://forum.laragon.org/manifest.json">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/uploads.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/drafts.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/tags.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/categoryList.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/resize.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/autocomplete.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/templates/composer.tpl?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/language/en-US/topic.json?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/language/en-US/modules.json?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/language/en-US/tags.json?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="stylesheet" href="static/css/railscasts.css">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/highlight.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/api/language/en-US/markdown?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+
+	<!--[if lt IE 9]>
+  		<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.min.js"></script>
+  		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  		<script>__lt_ie_9__ = 1;</script>
+	<![endif]-->
+
+	<script>
+		var RELATIVE_PATH = "";
+		var config = JSON.parse('{"relative_path":"","version":"1.4.0","siteTitle":"Laragon","browserTitle":"Laragon","titleLayout":"&#123;pageTitle&#125; | &#123;browserTitle&#125;","showSiteTitle":true,"minimumTitleLength":"10","maximumTitleLength":"255","minimumPostLength":"10","maximumPostLength":"32767","minimumTagsPerTopic":"0","maximumTagsPerTopic":"5","minimumTagLength":3,"maximumTagLength":15,"hasImageUploadPlugin":true,"useOutgoingLinksPage":false,"allowGuestSearching":false,"allowGuestUserSearching":false,"allowGuestHandles":false,"allowFileUploads":true,"allowTopicsThumbnail":false,"usePagination":true,"disableChat":false,"disableChatMessageEditing":false,"socketioTransports":["polling","websocket"],"websocketAddress":"","maxReconnectionAttempts":5,"reconnectionDelay":1500,"topicsPerPage":"20","postsPerPage":"20","maximumFileSize":"2048","theme:id":"nodebb-theme-persona","theme:src":"","defaultLang":"en-US","userLang":"en-US","loggedIn":false,"cache-buster":"0130c7a1-1f08-4b64-8dea-be127e4ad8e9","requireEmailConfirmation":true,"topicPostSort":"oldest_to_newest","categoryTopicSort":"newest_to_oldest","csrf_token":"1K5yMzMc-5t39UQBk2pSEO66WPvDUi4_cszM","searchEnabled":true,"bootswatchSkin":"default","timeagoCutoff":30,"cookies":{"enabled":false,"message":"\\\\[\\\\[global:cookies.message\\\\]\\\\]","dismiss":"\\\\[\\\\[global:cookies.accept\\\\]\\\\]","link":"\\\\[\\\\[global:cookies.learn_more\\\\]\\\\]"},"topicSearchEnabled":false,"delayImageLoading":true,"composer-default":{},"markdown":{"highlight":1,"theme":"railscasts.css"},"hideSubCategories":false,"hideCategoryLastPost":false,"question-and-answer":{"makeDefault":"on","defaultCid":"4","forceQuestions":"off"}}');
+		var app = {
+			template: "categories",
+			user: JSON.parse('{"uid":0,"username":"Guest","userslug":"","email":"","picture":"","status":"offline","reputation":0,"email:confirmed":false,"isAdmin":false,"isGlobalMod":false,"isMod":false,"isEmailConfirmSent":false}')
+		};
+	</script>
+
+	<script src="static/js/nodebb.min.js"></script>
+
+	
+
+	
+	
+</head>
+
+<body class="page-categories skin-default">
+	<nav id="menu" class="hidden">
+		<section class="menu-profile">
+			
+		</section>
+
+		<section class="menu-section" data-section="navigation">
+			<h3 class="menu-section-title">Navigation</h3>
+			<ul class="menu-section-list"></ul>
+		</section>
+
+		
+	</nav>
+
+	<main id="panel">
+		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
+			<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" id="mobile-menu">
+					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o" data-content="0"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="index6.html">
+					<img alt="" class="hide forum-logo" src="">
+				</a>
+								<a href="index6.html">
+					<h1 class="navbar-brand forum-title">Laragon</h1>
+				</a>
+
+				<div component="navbar/title" class="visible-xs hidden">
+					<span></span>
+				</div>
+			</div>
+
+			<div id="nav-dropdown" class="hidden-xs">
+												<ul id="logged-out-menu" class="nav navbar-nav navbar-right">
+					
+					<li>
+						<a href="login26.html">
+							<i class="fa fa-sign-in visible-xs-inline"></i>
+							<span>Login</span>
+						</a>
+					</li>
+				</ul>
+								<ul class="nav navbar-nav navbar-right">
+					<li>
+						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET" action="">
+							<button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw" title="Search"></i></button>
+							<div class="hidden" id="search-fields">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search" name="query" value="">
+									<a href="#"><i class="fa fa-gears fa-fw advanced-search-link"></i></a>
+								</div>
+								<button type="submit" class="btn btn-default hide">Search</button>
+							</div>
+						</form>
+					</li>
+					<li class="visible-xs" id="search-menu">
+						<a href="login27.html">
+							<i class="fa fa-search fa-fw"></i> Search
+						</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right hidden-xs">
+					<li>
+						<a href="#" id="reconnect" class="hide" title="Connection to Laragon has been lost, attempting to reconnect...">
+							<i class="fa fa-check"></i>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md">
+					<li class="dropdown">
+						<i class="fa fa-angle-double-up pointer fa-fw pagetop"></i>
+						<i class="fa fa-angle-up pointer fa-fw pageup"></i>
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<span class="pagination-text"></span>
+						</a>
+
+						<i class="fa fa-angle-down pointer fa-fw pagedown"></i>
+						<i class="fa fa-angle-double-down pointer fa-fw pagebottom"></i>
+
+						<div class="progress-container">
+							<div class="progress-bar"></div>
+						</div>
+
+						<ul class="dropdown-menu" role="menu">
+  							<input type="text" class="form-control" id="indexInput" placeholder="Enter index">
+  						</ul>
+					</li>
+				</ul>
+
+				<ul id="main-nav" class="nav navbar-nav">
+															<li class="">
+						<a href="" title="Categories">
+														<i class="fa fa-fw fa-list"></i>
+
+														<span class="visible-xs-inline">Categories</span>
+						</a>
+					</li>
+					
+										<li class="">
+						<a href="tags.html" title="Tags">
+														<i class="fa fa-fw fa-tags"></i>
+
+														<span class="visible-xs-inline">Tags</span>
+						</a>
+					</li>
+										<li class="">
+						<a href="popular.html" title="Popular">
+														<i class="fa fa-fw fa-fire"></i>
+
+														<span class="visible-xs-inline">Popular</span>
+						</a>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+
+			</div>
+		</nav>
+		<div class="container" id="content">
+	<noscript>
+		<div class="alert alert-danger">
+			<p>
+				Your browser does not seem to support JavaScript. As a result, your viewing experience will be diminished, and you have been placed in <strong>read-only mode</strong>.
+			</p>
+			<p>
+				Please download a browser that supports JavaScript, or enable it if it's disabled (i.e. NoScript).
+			</p>
+		</div>
+	</noscript>
+<ol class="breadcrumb">
+		<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+		<a href="index6.html" itemprop="url">
+			<span itemprop="title">
+				Home
+				
+			</span>
+		</a>
+	</li>
+	<li component="breadcrumb/current" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
+		
+			<span itemprop="title">
+				Categories
+												
+			</span>
+		
+	</li>
+</ol>
+<div widget-area="header"></div>
+<div class="row">
+	<div class="col-lg-12 col-sm-12" has-widget-class="col-lg-9 col-sm-12" has-widget-target="sidebar">
+		<h1 class="categories-title">Categories</h1>
+		<ul class="categories" itemscope="" itemtype="http://www.schema.org/ItemList">
+			<li component="categories/category" data-cid="11" data-numrecentreplies="1" class="row clearfix">
+	<meta itemprop="name" content="Translation">
+
+	<div class="content col-xs-12 col-md-7 col-sm-9">
+		<div class="icon pull-left" style="background-color: #AB4642; color: #fff;">
+			<i class="fa fa-fw fa-comments"></i>
+		</div>
+
+		<h2 class="title">
+<a href="translation.html" itemprop="url">
+Translation
+</a><br>
+						<div class="description">
+			<p>You can help translating Laragon to your language</p>
+
+			</div>
+						
+		</h2>
+		<span class="visible-xs pull-right">
+			<a class="permalink" href="login39.html">
+				<small class="timeago" title="2021-08-23T15:45:07.994Z"></small>
+			</a>
+		</span>
+	</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="12">12</span><br>
+		<small>Topics</small>
+	</div>
+	<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="92">92</span><br>
+		<small>Posts</small>
+	</div>
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+<div class="card" style="border-color: #AB4642">
+			<div component="category/posts">
+		<p>
+			<a href="login37.html">
+								<span class="user-icon user-img" title="JSHar" style="background-color: #009688;">J</span>
+			</a>
+			<a class="permalink" href="login39.html">
+				<small class="timeago" title="2021-08-23T15:45:07.994Z"></small>
+			</a>
+		</p>
+		<div class="post-content">
+			<p><a class="plugin-mentions-a" href="login40.html">@leokhoa</a> i can help to translate the documentation and webpage to Georgian Language</p>
+
+		</div>
+	</div>
+
+	
+</div>
+	</div>
+</li>
+
+<li component="categories/category" data-cid="1" data-numrecentreplies="1" class="row clearfix">
+	<meta itemprop="name" content="Announcements">
+
+	<div class="content col-xs-12 col-md-7 col-sm-9">
+		<div class="icon pull-left" style="background-color: #fda34b; color: #fff;">
+			<i class="fa fa-fw fa-bullhorn"></i>
+		</div>
+
+		<h2 class="title">
+<a href="announcements.html" itemprop="url">
+Announcements
+</a><br>
+						<div class="description">
+			Announcements regarding our community
+			</div>
+						
+		</h2>
+		<span class="visible-xs pull-right">
+			<a class="permalink" href="login43.html">
+				<small class="timeago" title="2016-07-01T00:55:17.519Z"></small>
+			</a>
+		</span>
+	</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="184">184</span><br>
+		<small>Topics</small>
+	</div>
+	<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="933">933</span><br>
+		<small>Posts</small>
+	</div>
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+<div class="card" style="border-color: #fda34b">
+			<div component="category/posts">
+		<p>
+			<a href="login41.html">
+								<span class="user-icon user-img" title="trueWD" style="background-color: #e91e63;">T</span>
+			</a>
+			<a class="permalink" href="login43.html">
+				<small class="timeago" title="2016-07-01T00:55:17.519Z"></small>
+			</a>
+		</p>
+		<div class="post-content">
+			<p>I would be glad if Laragon the MAC OS .</p>
+<p>Is something like this possible?</p>
+
+		</div>
+	</div>
+
+	
+</div>
+	</div>
+</li>
+
+<li component="categories/category" data-cid="5" data-numrecentreplies="1" class="row clearfix">
+	<meta itemprop="name" content="Tutorials">
+
+	<div class="content col-xs-12 col-md-7 col-sm-9">
+		<div class="icon pull-left" style="background-color: #DC9656; color: #fff;">
+			<i class="fa fa-fw fa-comments"></i>
+		</div>
+
+		<h2 class="title">
+<a href="tutorials.html" itemprop="url">
+Tutorials
+</a><br>
+						<div class="description">
+			This category is for tutorial topics
+			</div>
+						
+		</h2>
+		<span class="visible-xs pull-right">
+			<a class="permalink" href="login30.html">
+				<small class="timeago" title="2016-10-17T07:12:02.039Z"></small>
+			</a>
+		</span>
+	</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="151">151</span><br>
+		<small>Topics</small>
+	</div>
+	<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="816">816</span><br>
+		<small>Posts</small>
+	</div>
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+<div class="card" style="border-color: #DC9656">
+			<div component="category/posts">
+		<p>
+			<a href="login28.html">
+								<img class="user-img" title="leokhoa" alt="leokhoa" src="https://i.imgur.com/pY5ZOOM.png" title="leokhoa">
+			</a>
+			<a class="permalink" href="login30.html">
+				<small class="timeago" title="2016-10-17T07:12:02.039Z"></small>
+			</a>
+		</p>
+		<div class="post-content">
+			<p>You can add Xdebug to Laragon easily.<br>
+Method 1: Using phpinfo()  &amp; Xdebug Wizard</p>
+
+
+<p>Copy phpinfo() content:<br>
+<a href="javascript:;" rel="nofollow">http://localhost/?q=info</a></p>
+
+
+<p>Paste the copied data to the form in the Xdebug Wizard page<br>
+<a href="javascript:;" rel="nofollow">https://xdebug.org/wizard.php</a></p>
+
+
+<p>Click &quot;Analyse my phpinfo() output&quot;, and follow the instructions.</p>
+
+
+<p>Note: Their instructions will ask for &quot;4. Restart the webserver&quot; but with Laragon, you just need to click Reload button.</p>
+
+		</div>
+	</div>
+
+	
+</div>
+	</div>
+</li>
+
+<li component="categories/category" data-cid="2" data-numrecentreplies="1" class="row clearfix">
+	<meta itemprop="name" content="General Discussion">
+
+	<div class="content col-xs-12 col-md-7 col-sm-9">
+		<div class="icon pull-left" style="background-color: #59b3d0; color: #fff;">
+			<i class="fa fa-fw fa-comments-o"></i>
+		</div>
+
+		<h2 class="title">
+<a href="general-discussion.html" itemprop="url">
+General Discussion
+</a><br>
+						<div class="description">
+			A place to talk about whatever you want
+			</div>
+						
+		</h2>
+		<span class="visible-xs pull-right">
+			<a class="permalink" href="login35.html">
+				<small class="timeago" title="2021-10-07T17:42:41.772Z"></small>
+			</a>
+		</span>
+	</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="402">402</span><br>
+		<small>Topics</small>
+	</div>
+	<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="1383">1383</span><br>
+		<small>Posts</small>
+	</div>
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+<div class="card" style="border-color: #59b3d0">
+			<div component="category/posts">
+		<p>
+			<a href="login33.html">
+								<span class="user-icon user-img" title="KOLEN94" style="background-color: #e65100;">K</span>
+			</a>
+			<a class="permalink" href="login35.html">
+				<small class="timeago" title="2021-10-07T17:42:41.772Z"></small>
+			</a>
+		</p>
+		<div class="post-content">
+			<p>Instale Laragon 5 y cuando intente instalar wordpress, me sale este error!, ya intente todas la soluciones posibles<br>
+</p>
+
+		</div>
+	</div>
+
+	
+</div>
+	</div>
+</li>
+
+<li component="categories/category" data-cid="3" data-numrecentreplies="1" class="row clearfix">
+	<meta itemprop="name" content="Blogs">
+
+	<div class="content col-xs-12 col-md-7 col-sm-9">
+		<div class="icon pull-left" style="background-color: #86ba4b; color: #fff;">
+			<i class="fa fa-fw fa-newspaper-o"></i>
+		</div>
+
+		<h2 class="title">
+<a href="javascript:;" itemprop="url">
+Blogs
+</a><br>
+						<div class="description">
+			Blog posts from individual members
+			</div>
+						
+		</h2>
+		<span class="visible-xs pull-right">
+			<a class="permalink" href="javascript:;">
+				<small class="timeago" title="2020-01-20T15:22:30.410Z"></small>
+			</a>
+		</span>
+	</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="7">7</span><br>
+		<small>Topics</small>
+	</div>
+	<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="11">11</span><br>
+		<small>Posts</small>
+	</div>
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+<div class="card" style="border-color: #86ba4b">
+			<div component="category/posts">
+		<p>
+			<a href="javascript:;">
+								<img class="user-img" title="itanea" alt="itanea" src="https://i.imgur.com/z6HorF2.png" title="itanea">
+			</a>
+			<a class="permalink" href="javascript:;">
+				<small class="timeago" title="2020-01-20T15:22:30.410Z"></small>
+			</a>
+		</p>
+		<div class="post-content">
+			<p>Je viens de mettre en ligne un article sur comment installer une version plus récente de Redis sur Laragon.<br>
+Si vous souhaitez en savoir plus, <a href="javascript:;" rel="nofollow">c'est par ici</a> </p>
+
+		</div>
+	</div>
+
+	
+</div>
+	</div>
+</li>
+
+<li component="categories/category" data-cid="6" data-numrecentreplies="1" class="row clearfix">
+	<meta itemprop="name" content="Documents">
+
+	<div class="content col-xs-12 col-md-7 col-sm-9">
+		<div class="icon pull-left" style="background-color: #7CAFC2; color: #fff;">
+			<i class="fa fa-fw fa-comments"></i>
+		</div>
+
+		<h2 class="title">
+<a href="javascript:;" itemprop="url">
+Documents
+</a><br>
+						<div class="description">
+			<p>Detail information for Laragon</p>
+
+			</div>
+						<span class="category-children"><a href="installation.html"><span class="fa-stack fa-lg"><i style="color:#A16946;" class="fa fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fa fa-stack-1x fa-comments"></i></span><small>Installation</small></a> <a href="getting-started.html"><span class="fa-stack fa-lg"><i style="color:#A1B56C;" class="fa fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fa fa-stack-1x fa-comments"></i></span><small>Getting Started</small></a> </span>
+		</h2>
+		<span class="visible-xs pull-right">
+			<a class="permalink" href="javascript:;">
+				<small class="timeago" title="2021-03-29T16:38:50.127Z"></small>
+			</a>
+		</span>
+	</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="157">157</span><br>
+		<small>Topics</small>
+	</div>
+	<div class="col-md-1 hidden-sm hidden-xs stats">
+		<span class="unread human-readable-number" title="585">585</span><br>
+		<small>Posts</small>
+	</div>
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+<div class="card" style="border-color: #7CAFC2">
+			<div component="category/posts">
+		<p>
+			<a href="javascript:;">
+								<span class="user-icon user-img" title="lydongha" style="background-color: #f44336;">L</span>
+			</a>
+			<a class="permalink" href="javascript:;">
+				<small class="timeago" title="2021-03-29T16:38:50.127Z"></small>
+			</a>
+		</p>
+		<div class="post-content">
+			<p>E mới chuyển từ xampp sang ở xampp e vẫn cài được oci8 bình thường tuy nhiên e chuyển sang laragon cài theo hướng dẫn của a nhưng không được nhờ a hỗ trợ giúp.<br>
+Thanks!</p>
+
+		</div>
+	</div>
+
+	
+</div>
+	</div>
+</li>
+		</ul>
+	</div>
+	<div widget-area="sidebar" class="col-lg-3 col-sm-12 hidden"></div>
+</div>
+<div widget-area="footer"></div>
+		</div><!-- END container -->
+	</main>
+
+	<div class="hide">
+<script type="text/tpl" data-template="500">
+&#x3C;div class=&#x22;alert alert-danger&#x22;&#x3E;
+&#x9;&#x3C;strong&#x3E;Internal Error.&#x3C;/strong&#x3E;
+&#x9;&#x3C;p&#x3E;Oops! Looks like something went wrong!&#x3C;/p&#x3E;
+&#x9;&#x3C;p&#x3E;&#x3C;/p&#x3E;
+&#x9;&#x3C;!-- IF error --&#x3E;&#x3C;p&#x3E;&#x3C;/p&#x3E;&#x3C;!-- ENDIF error --&#x3E;
+&#x3C;/div&#x3E;
+</script>
+	</div>
+
+	<div class="topic-search hidden">
+		<div class="btn-group">
+			<button type="button" class="btn btn-default count"></button>
+			<button type="button" class="btn btn-default prev"><i class="fa fa-fw fa-angle-up"></i></button>
+			<button type="button" class="btn btn-default next"><i class="fa fa-fw fa-angle-down"></i></button>
+		</div>
+	</div>
+
+	<div component="toaster/tray" class="alert-window">
+		<div id="reconnect-alert" class="alert alert-dismissable alert-warning clearfix hide" component="toaster/toast">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<p>Looks like your connection to Laragon was lost, please wait while we try to reconnect.</p>
+		</div>
+	</div>
+
+	<script>
+		require(['forum/footer']);
+	</script>
+</body>
+</html>
+<script id="ajaxify-data" type="application/json">{"title":"[[pages:categories]]","categories":[{"cid":"11","name":"Translation","description":"You can help translating Laragon to your language","descriptionParsed":"<p>You can help translating Laragon to your language<\/p>\n","icon":"fa-comments","bgColor":"#AB4642","color":"#fff","slug":"11/translation","parentCid":"0","topic_count":"12","post_count":"92","disabled":false,"order":"1","link":"","numRecentReplies":"1","class":"col-md-3 col-xs-6","imageClass":"cover","totalPostCount":92,"totalTopicCount":12,"unread-class":"unread","children":[],"posts":[{"pid":"10100","timestamp":"1629733507994","content":"<p><a class=\"plugin-mentions-a\" href=\"https://forum.laragon.org/uid/1\">@leokhoa<\/a> i can help to translate the documentation and webpage to Georgian Language<\/p>\n","user":{"username":"JSHar","userslug":"jshar","picture":"","icon:text":"J","icon:bgColor":"#009688"},"timestampISO":"2021-08-23T15:45:07.994Z","index":1,"cid":"11","parentCid":0,"topic":{"slug":"2529/georgian-language","title":"Georgian Language"}}],"teaser":{"url":"/topic/2529/georgian-language/1","timestampISO":"2021-08-23T15:45:07.994Z","pid":"10100"}},{"cid":"1","name":"Announcements","description":"Announcements regarding our community","icon":"fa-bullhorn","bgColor":"#fda34b","color":"#fff","slug":"1/announcements","parentCid":"0","topic_count":"184","post_count":"933","disabled":false,"order":"4","link":"","numRecentReplies":"1","class":"col-md-3 col-xs-6","imageClass":"cover","undefined":"on","totalPostCount":933,"totalTopicCount":184,"descriptionParsed":"Announcements regarding our community","unread-class":"unread","children":[],"posts":[{"pid":"614","timestamp":"1467334517519","content":"<p>I would be glad if Laragon the MAC OS .<\/p>\n<p>Is something like this possible?<\/p>\n","user":{"username":"trueWD","userslug":"truewd","picture":"","icon:text":"T","icon:bgColor":"#e91e63"},"timestampISO":"2016-07-01T00:55:17.519Z","index":1,"cid":"1","parentCid":0,"topic":{"slug":"153/laragon-for-mac-os","title":"Laragon For MAC OS"}}],"teaser":{"url":"/topic/153/laragon-for-mac-os/1","timestampISO":"2016-07-01T00:55:17.519Z","pid":"614"}},{"cid":"5","name":"Tutorials","description":"This category is for tutorial topics","icon":"fa-comments","bgColor":"#DC9656","color":"#fff","slug":"5/tutorials","parentCid":"0","topic_count":"151","post_count":"816","disabled":false,"order":"5","link":"","numRecentReplies":"1","class":"col-md-3 col-xs-6","imageClass":"cover","undefined":"on","totalPostCount":816,"totalTopicCount":151,"descriptionParsed":"This category is for tutorial topics","unread-class":"unread","children":[],"posts":[{"pid":"1176","timestamp":"1476688322039","content":"<p>You can add Xdebug to Laragon easily.<br />\nMethod 1: Using phpinfo()  &amp; Xdebug Wizard<\/p>\n\n\n<p>Copy phpinfo() content:<br />\n<a href=\"http://localhost/?q=info\" rel=\"nofollow\">http://localhost/?q=info<\/a><\/p>\n\n\n<p>Paste the copied data to the form in the Xdebug Wizard page<br />\n<a href=\"https://xdebug.org/wizard.php\" rel=\"nofollow\">https://xdebug.org/wizard.php<\/a><\/p>\n\n\n<p>Click &quot;Analyse my phpinfo() output&quot;, and follow the instructions.<\/p>\n\n\n<p>Note: Their instructions will ask for &quot;4. Restart the webserver&quot; but with Laragon, you just need to click Reload button.<\/p>\n","user":{"username":"leokhoa","userslug":"leokhoa","picture":"https://i.imgur.com/pY5ZOOM.png","icon:text":"L","icon:bgColor":"#ff5722"},"timestampISO":"2016-10-17T07:12:02.039Z","index":1,"cid":"5","parentCid":0,"topic":{"slug":"264/tutorial-how-to-add-xdebug-to-laragon","title":"[Tutorial] How to add Xdebug to Laragon"}}],"teaser":{"url":"/topic/264/tutorial-how-to-add-xdebug-to-laragon/1","timestampISO":"2016-10-17T07:12:02.039Z","pid":"1176"}},{"cid":"2","name":"General Discussion","description":"A place to talk about whatever you want","icon":"fa-comments-o","bgColor":"#59b3d0","color":"#fff","slug":"2/general-discussion","parentCid":"0","topic_count":"402","post_count":"1383","disabled":false,"order":"6","link":"","numRecentReplies":"1","class":"col-md-3 col-xs-6","imageClass":"cover","undefined":"on","totalPostCount":1383,"totalTopicCount":402,"descriptionParsed":"A place to talk about whatever you want","unread-class":"unread","children":[],"posts":[{"pid":"10232","timestamp":"1633628561772","content":"<p>Instale Laragon 5 y cuando intente instalar wordpress, me sale este error!, ya intente todas la soluciones posibles<br />\n<\/p>\n","user":{"username":"KOLEN94","userslug":"kolen94","picture":"","icon:text":"K","icon:bgColor":"#e65100"},"timestampISO":"2021-10-07T17:42:41.772Z","index":1,"cid":"2","parentCid":0,"topic":{"slug":"2580/problema-con-laragon-5-0-0-error-no-file-wordpress","title":"Problema con Laragon 5.0.0 error no file Wordpress"}}],"teaser":{"url":"/topic/2580/problema-con-laragon-5-0-0-error-no-file-wordpress/1","timestampISO":"2021-10-07T17:42:41.772Z","pid":"10232"}},{"cid":"3","name":"Blogs","description":"Blog posts from individual members","icon":"fa-newspaper-o","bgColor":"#86ba4b","color":"#fff","slug":"3/blogs","parentCid":"0","topic_count":"7","post_count":"11","disabled":false,"order":"7","link":"","numRecentReplies":"1","class":"col-md-3 col-xs-6","imageClass":"cover","undefined":"on","totalPostCount":11,"totalTopicCount":7,"descriptionParsed":"Blog posts from individual members","unread-class":"unread","children":[],"posts":[{"pid":"7841","timestamp":"1579533750410","content":"<p>Je viens de mettre en ligne un article sur comment installer une version plus récente de Redis sur Laragon.<br />\nSi vous souhaitez en savoir plus, <a href=\"https://itanea.fr/apprendre-le-developpement-web/installer-une-version-plus-recente-de-redis-sur-laragon/\" rel=\"nofollow\">c'est par ici<\/a> <\/p>\n","user":{"username":"itanea","userslug":"itanea","picture":"https://i.imgur.com/z6HorF2.png","icon:text":"I","icon:bgColor":"#e65100"},"timestampISO":"2020-01-20T15:22:30.410Z","index":1,"cid":"3","parentCid":0,"topic":{"slug":"1848/for-the-french-community-installer-une-version-plus-récente-de-redis-sur-laragon","title":"[For the french community] Installer une version plus récente de Redis sur Laragon"}}],"teaser":{"url":"/topic/1848/for-the-french-community-installer-une-version-plus-récente-de-redis-sur-laragon/1","timestampISO":"2020-01-20T15:22:30.410Z","pid":"7841"}},{"cid":"6","name":"Documents","description":"Detail information for Laragon","icon":"fa-comments","bgColor":"#7CAFC2","color":"#fff","slug":"6/documents","parentCid":"0","topic_count":"13","post_count":"48","disabled":false,"order":"8","link":"","numRecentReplies":"1","class":"col-md-3 col-xs-6","imageClass":"cover","descriptionParsed":"<p>Detail information for Laragon<\/p>\n","totalPostCount":585,"totalTopicCount":157,"unread-class":"unread","children":[{"cid":"7","name":"Installation","description":"","icon":"fa-comments","bgColor":"#A16946","color":"#fff","slug":"7/installation","parentCid":"6","topic_count":"93","post_count":"354","disabled":false,"order":"7","link":"","numRecentReplies":"1","class":"col-md-3 col-xs-6","imageClass":"cover","totalPostCount":354,"totalTopicCount":93,"children":[],"posts":[{"pid":"8638","timestamp":"1593060813233","content":"<p>Hi !<br />\nWhen you install  VS Code with Laragon, the VS code portable mode is not activated.<br />\nTo make VS Code portable, you have to create a &quot;data&quot; folder in your Laragon vs code folder :<\/p>\n<p>[YOUR LARAGON FOLDER]\\bin\\code\\data<\/p>\n<p>if you find out after using vs code for a while, just move the files in :<br />\nC:\\Users[YOUR USER NAME].vscode in that data folder.<\/p>\n<p>Regards,<\/p>\n<p>Dev<\/p>\n","user":{"username":"devansz","userslug":"devansz","picture":"","icon:text":"D","icon:bgColor":"#1b5e20"},"timestampISO":"2020-06-25T04:53:33.233Z","index":1,"cid":"7","parentCid":6,"topic":{"slug":"2089/using-vs-code-with-laragon-in-portable-mode-beware","title":"Using VS CODE with Laragon in portable mode... beware !"}}]},{"cid":"8","name":"Getting Started","description":"Getting Started","icon":"fa-comments","bgColor":"#A1B56C","color":"#fff","slug":"8/getting-started","parentCid":"6","topic_count":"51","post_count":"183","disabled":false,"order":"8","link":"","numRecentReplies":"1","class":"col-md-3 col-xs-6","imageClass":"cover","descriptionParsed":"<p>Getting Started<\/p>\n","totalPostCount":183,"totalTopicCount":51,"children":[],"posts":[{"pid":"8387","timestamp":"1588364417037","content":"<p>Forwarding     <a href=\"http://acfad615.ngrok.io\" rel=\"nofollow\">http://acfad615.ngrok.io<\/a> -&gt; <a href=\"http://xxxx.test:80\" rel=\"nofollow\">http://xxxx.test:80<\/a><br />\nForwarding     <a href=\"https://acfad615.ngrok.io\" rel=\"nofollow\">https://acfad615.ngrok.io<\/a> -&gt; <a href=\"http://xxxx.test:80\" rel=\"nofollow\">http://xxxx.test:80<\/a><\/p>\n<p>How can I change that https is sending to https on port 443 ?<\/p>\n","user":{"username":"Blacktigerke","userslug":"blacktigerke","picture":"","icon:text":"B","icon:bgColor":"#009688"},"timestampISO":"2020-05-01T20:20:17.037Z","index":1,"cid":"8","parentCid":6,"topic":{"slug":"1996/ngrok-not-sending-to-https","title":"Ngrok not sending to https"}}]}],"posts":[{"pid":"9584","timestamp":"1617035930127","content":"<p>E mới chuyển từ xampp sang ở xampp e vẫn cài được oci8 bình thường tuy nhiên e chuyển sang laragon cài theo hướng dẫn của a nhưng không được nhờ a hỗ trợ giúp.<br />\nThanks!<\/p>\n","user":{"username":"lydongha","userslug":"lydongha","picture":"","icon:text":"L","icon:bgColor":"#f44336"},"timestampISO":"2021-03-29T16:38:50.127Z","index":1,"cid":"6","parentCid":0,"topic":{"slug":"2381/oci8-không-hoạt-động-nhờ-a-khoa-hỗ-trợ-giúp","title":"oci8 không hoạt động nhờ a Khoa hỗ trợ giúp"}}],"teaser":{"url":"/topic/2381/oci8-không-hoạt-động-nhờ-a-khoa-hỗ-trợ-giúp/1","timestampISO":"2021-03-29T16:38:50.127Z","pid":"9584"}}],"breadcrumbs":[{"text":"[[global:home]]","url":"/"},{"text":"[[pages:categories]]"}],"loggedIn":false,"relative_path":"","template":{"name":"categories","categories":true},"url":"/categories","bodyClass":"page-categories"}</script>

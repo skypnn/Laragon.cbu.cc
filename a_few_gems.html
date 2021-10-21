@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>A Few Gems | Laragon - portable, isolated, fast & powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby.</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="microservices, nodejs, javascript">
+	<meta name="robots" content="index, follow">
+  <!-- Canonical links -->
+  <link rel="canonical" href="">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="https://laragon.org/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://laragon.org/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://laragon.org/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://laragon.org/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://laragon.org/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://laragon.org/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://laragon.org/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://laragon.org/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="https://laragon.org/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://laragon.org/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://laragon.org/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/moleculer.css -->
+  
+<link rel="stylesheet" href="static/css/moleculer.css">
+
+  <!-- endbuild -->
+  <link href="static/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/docsearch.min.css">
+  <!-- RSS 
+  <link rel="alternate" href="/atom.xml" title="Laragon - portable, isolated, fast & powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby.">
+  -->
+  <!-- Open Graph -->
+  <meta name="description" content="In this tutorial we’ll learn how to take advantage of the many plugins and libraries available to quickly add features to your application. First we’ll work with paperclip, a library that manages file">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A Few Gems">
+<meta property="og:url" content="https://laragon.org/rails/a_few_gems">
+<meta property="og:site_name" content="Laragon - portable, isolated, fast &amp; powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby.">
+<meta property="og:description" content="In this tutorial we’ll learn how to take advantage of the many plugins and libraries available to quickly add features to your application. First we’ll work with paperclip, a library that manages file">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-03-01T09:46:09.442Z">
+<meta property="article:modified_time" content="2019-03-01T09:46:09.442Z">
+<meta property="article:author" content="leokhoa">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="leovn">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-617943-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  <!-- Github Button -->
+  <script async="" defer="" src="static/js/buttons.js"></script>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="index.html" id="logo">Laragon</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="index1.html" class="main-nav-link">Docs</a>
+	<!--
+      <a href="https://github.com/leokhoa/laragon" target="_blank" rel="noopener" class="main-nav-link">Github</a>
+      <div id="search-input-wrap" class="on">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+	-->
+	 <a href="index2.html" class="main-nav-link">Why Laragon?</a>
+    <a href="index3.html" class="main-nav-link">Testimonials</a>
+    <a href="index4.html" class="main-nav-link">Download</a>
+    <a href="index5.html" class="main-nav-link">About</a>
+    <a href="index6.html" target="_blank" rel="noopener" class="main-nav-link">Community</a>
+    
+   
+    
+
+
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="">
+        
+          <option value="en" selected="">English</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+  <div id="container">
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope="" itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">A Few Gems</h1>
+                <a href="javascript:;" target="_blank" rel="noopener" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>In this tutorial we’ll learn how to take advantage of the many plugins and libraries available to quickly add features to your application. First we’ll work with <code>paperclip</code>, a library that manages file attachments and uploading.</p>
+<h3 id="Using-the-Gemfile-to-Set-up-a-RubyGem" class="article-heading"><a href="#Using-the-Gemfile-to-Set-up-a-RubyGem" class="headerlink" title="Using the Gemfile to Set up a RubyGem"></a>Using the <em>Gemfile</em> to Set up a RubyGem<a class="article-anchor" href="#Using-the-Gemfile-to-Set-up-a-RubyGem" aria-hidden="true"></a></h3><p>In the past Rails plugins were distributed in zip or tar files that got stored into your application’s file structure. One advantage of this method is that the plugin could be easily checked into your source control system along with everything you wrote in the app. The disadvantage is that it made upgrading to newer versions of the plugin, and dealing with the versions at all, complicated.</p>
+<p>These days, all Rails plugins are now ‘gems.’ RubyGems is a package management system for Ruby, similar to how Linux distributions use Apt or RPM. There are central servers that host libraries, and we can install those libraries on our machine with a single command. RubyGems takes care of any dependencies, allows us to pick any options if necessary, and installs the library.</p>
+<p>Let’s see it in action. Go to your terminal where you have the rails server running, and type <code>Ctrl-C</code>. If you have a console session open, type <code>exit</code> to exit. Then open up <code>Gemfile</code> and look for the lines like this:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">gem <span class="string">'turbolinks'</span>, <span class="string">'~&gt; 5'</span></span><br><span class="line"><span class="comment"># Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder</span></span><br><span class="line">gem <span class="string">'jbuilder'</span>, <span class="string">'~&gt; 2.5'</span></span><br><span class="line"><span class="comment"># Use Redis adapter to run Action Cable in production</span></span><br><span class="line"><span class="comment"># gem 'redis', '~&gt; 3.0'</span></span><br><span class="line"><span class="comment"># Use ActiveModel has_secure_password</span></span><br><span class="line"><span class="comment"># gem 'bcrypt', '~&gt; 3.1.7'</span></span><br></pre></td></tr></table></figure>
+<p>Some lines are commented out because they start with the <code>#</code> character. By specifying a RubyGem with the <code>gem</code> command, we’ll tell the Rails application “Make sure this gem is loaded when you start up. If it isn’t available, freak out!”  Here’s how we’ll require the paperclip gem, add this near those commented lines:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">gem <span class="string">"paperclip"</span></span><br></pre></td></tr></table></figure>
+<p>When you’re writing a production application, you might specify additional parameters that require a specific version or a custom source for the library. With that config line declared, go back to your terminal and run <code>rails server</code> to start the application again. You should get an error like this:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ rails server</span><br><span class="line">Could not find gem &apos;paperclip (&gt;= 0, runtime)&apos; in any of the gem sources listed in your Gemfile.</span><br><span class="line">Try running `bundle install`.</span><br></pre></td></tr></table></figure>
+<p>The last line is key – since our config file is specifying which gems it needs, the <code>bundle</code> command can help us install those gems. Go to your terminal and:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bundle</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Some output might like that:</span><br><span class="line">....</span><br><span class="line">Fetching paperclip 5.1.0</span><br><span class="line">Installing paperclip 5.1.0</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>It should then install the paperclip RubyGem with a version like 5.1.0. In some projects I work on, the config file specifies upwards of 18 gems. With that one <code>bundle</code> command the app will check that all required gems are installed with the right version, and if not, install them.</p>
+<p>Note: You may need to reload your rails server for the paperclip methods to work.</p>
+<p>Now we can start using the library in our application!</p>
+<h3 id="Setting-up-the-Database-for-Paperclip" class="article-heading"><a href="#Setting-up-the-Database-for-Paperclip" class="headerlink" title="Setting up the Database for Paperclip"></a>Setting up the Database for Paperclip<a class="article-anchor" href="#Setting-up-the-Database-for-Paperclip" aria-hidden="true"></a></h3><p>We want to add images to our articles. To keep it simple, we’ll say that a single article could have zero or one images. In later versions of the app maybe we’d add the ability to upload multiple images and appear at different places in the article, but for now the one will show us how to work with paperclip.</p>
+<p>First we need to add some fields to the Article model that will hold the information about the uploaded image. Any time we want to make a change to the database we’ll need a migration. Go to your terminal and execute this:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rails generate migration add_paperclip_fields_to_article</span><br></pre></td></tr></table></figure>
+<p>That will create a file in your <code>db/migrate/</code> folder that ends in <code>_add_paperclip_fields_to_article.rb</code>. Open that file now.</p>
+<p>Remember that the code inside the <code>change</code> method is to migrate the database forward, and Rails should automatically figure out how to undo those changes. We’ll use the <code>add_column</code> and <code>remove_column</code> methods to setup the fields paperclip is expecting:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">AddPaperclipFieldsToArticle</span> &lt; ActiveRecord::Migration</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">change</span></span></span><br><span class="line">    add_column <span class="symbol">:articles</span>, <span class="symbol">:image_file_name</span>,    <span class="symbol">:string</span></span><br><span class="line">    add_column <span class="symbol">:articles</span>, <span class="symbol">:image_content_type</span>, <span class="symbol">:string</span></span><br><span class="line">    add_column <span class="symbol">:articles</span>, <span class="symbol">:image_file_size</span>,    <span class="symbol">:integer</span></span><br><span class="line">    add_column <span class="symbol">:articles</span>, <span class="symbol">:image_updated_at</span>,   <span class="symbol">:datetime</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>Then go to your terminal and run </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rake db:migrate</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">The `rake` command should show you that the migration ran and added columns to the database.</span><br><span class="line"></span><br><span class="line">### Adding to the Model</span><br><span class="line"></span><br><span class="line">The gem is loaded, the database is ready, but we need to tell our Rails application about the image attachment we want to add. Open `app/models/article.rb` and just below the existing `has_many` lines, add these lines:</span><br><span class="line"></span><br><span class="line">```ruby</span><br><span class="line">has_attached_file :image</span><br><span class="line">validates_attachment_content_type :image, :content_type =&gt; [&quot;image/jpg&quot;, &quot;image/jpeg&quot;, &quot;image/png&quot;]</span><br></pre></td></tr></table></figure>
+<p>This <code>has_attached_file</code> method is part of the paperclip library. With that declaration, paperclip will understand that this model should accept a file attachment and that there are fields to store information about that file which start with <code>image_</code> in this model’s database table.</p>
+<p>From version 4.0, all attachments are required to include a content_type validation, a file_name validation, or to explicitly state that they’re not going to have either. Paperclip raises MissingRequiredValidatorError error if you do not do this. So, we add the validates_attachment_content_type line so that our model will validate that it is receiving a proper filetype.</p>
+<p>We also have to deal with mass assignment! Modify your <code>app/helpers/articles_helper.rb</code> and update the <code>article_params</code> method to permit an <code>:image</code> as:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">article_params</span></span></span><br><span class="line">  params.<span class="keyword">require</span>(<span class="symbol">:article</span>).permit(<span class="symbol">:title</span>, <span class="symbol">:body</span>, <span class="symbol">:tag_list</span>, <span class="symbol">:image</span>)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<h3 id="Modifying-the-Form-Template" class="article-heading"><a href="#Modifying-the-Form-Template" class="headerlink" title="Modifying the Form Template"></a>Modifying the Form Template<a class="article-anchor" href="#Modifying-the-Form-Template" aria-hidden="true"></a></h3><p>First we’ll add the ability to upload the file when editing the article, then we’ll add the image display to the article show template. Open your <code>app/views/articles/_form.html.erb</code> view template. We need to make two changes…</p>
+<p>In the very first line, we need to specify that this form needs to accept “multipart” data. This is an instruction to the browser about how to submit the form. Change your top line so it looks like this:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;%=<span class="ruby"> form_for(@article, <span class="symbol">html:</span> &#123;<span class="symbol">multipart:</span> <span class="literal">true</span>&#125;) <span class="keyword">do</span> <span class="params">|f|</span> </span>%&gt;</span><br></pre></td></tr></table></figure>
+<p>Then further down the form, right before the paragraph with the save button, let’s add a label and field for the file uploading:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">  &lt;%=<span class="ruby"> f.label <span class="symbol">:image</span>, <span class="string">"Attach an Image"</span> </span>%&gt;&lt;br /&gt;</span><br><span class="line">  &lt;%=<span class="ruby"> f.file_field <span class="symbol">:image</span> </span>%&gt;</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="Trying-it-Out" class="article-heading"><a href="#Trying-it-Out" class="headerlink" title="Trying it Out"></a>Trying it Out<a class="article-anchor" href="#Trying-it-Out" aria-hidden="true"></a></h3><p>If your server isn’t running, start it up (<code>rails server</code> in your terminal). Then go to <a href="javascript:;" target="_blank" rel="external">http://localhost:3000/articles/</a> and click EDIT for your first article. The file field should show up towards the bottom. Click the <code>Choose a File</code> and select a small image file (a suitable sample image can be found at <a href="javascript:;" target="_blank" rel="external">http://www.hungryacademy.com/images/beast.png</a>). Click SAVE and you’ll return to the article index. Click the title of the article you just modified. What do you see?  Did the image attach to the article?</p>
+<p>When I first did this, I wasn’t sure it worked. Here’s how I checked:</p>
+<ol>
+<li>Open a console session (<code>rails console</code> from terminal)</li>
+<li>Find the ID number of the article by looking at the URL. In my case, the url was <code>http://localhost:3000/articles/1</code> so the ID number is just <code>1</code></li>
+<li>In console, enter <code>article = Article.find(1)</code></li>
+<li>Right away I see that the article has data in the <code>image_file_name</code> and other fields, so I think it worked.</li>
+<li>Enter <code>article.image</code> to see even more data about the file</li>
+</ol>
+<p>Ok, it’s in there, but we need it to actually show up in the article. Open the <code>app/views/articles/show.html.erb</code> view template. Before the line that displays the body, let’s add this line:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;&lt;%=<span class="ruby"> image_tag @article.image.url </span>%&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>Then refresh the article in your browser. Tada!</p>
+<h3 id="Improving-the-Form" class="article-heading"><a href="#Improving-the-Form" class="headerlink" title="Improving the Form"></a>Improving the Form<a class="article-anchor" href="#Improving-the-Form" aria-hidden="true"></a></h3><p>When first working with the edit form I wasn’t sure the upload was working because I expected the <code>file_field</code> to display the name of the file that I had already uploaded. Go back to the edit screen in your browser for the article you’ve been working with. See how it just says “Choose File, no file selected” – nothing tells the user that a file already exists for this article. Let’s add that information in now.</p>
+<p>So open that <code>app/views/articles/_form.html.erb</code> and look at the paragraph where we added the image upload field. We’ll add in some new logic that works like this:</p>
+<ul>
+<li>If the article has an image filename<br>*Display the image</li>
+<li>Then display the <code>file_field</code> button with the label “Attach a New Image”</li>
+</ul>
+<p>So, turning that into code…</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">  &lt;%<span class="ruby"> <span class="keyword">if</span> @article.image.exists? </span>%&gt;</span><br><span class="line">      &lt;%=<span class="ruby"> image_tag @article.image.url </span>%&gt;&lt;br/&gt;</span><br><span class="line">  &lt;%<span class="ruby"> <span class="keyword">end</span> </span>%&gt;</span><br><span class="line">  &lt;%=<span class="ruby"> f.label <span class="symbol">:image</span>, <span class="string">"Attach a New Image"</span> </span>%&gt;&lt;br /&gt;</span><br><span class="line">  &lt;%=<span class="ruby"> f.file_field <span class="symbol">:image</span> </span>%&gt;</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>Test how that looks both for articles that already have an image and ones that don’t.</p>
+<p>When you “show” an article that doesn’t have an image attached it’ll have an ugly broken link. Go into your <code>app/views/articles/show.html.erb</code> and add a condition like we did in the form so the image is only displayed if it actually exists.</p>
+<p>Now our articles can have an image and all the hard work was handled by paperclip!</p>
+<h3 id="Further-Notes-about-Paperclip" class="article-heading"><a href="#Further-Notes-about-Paperclip" class="headerlink" title="Further Notes about Paperclip"></a>Further Notes about Paperclip<a class="article-anchor" href="#Further-Notes-about-Paperclip" aria-hidden="true"></a></h3><p>Yes, a model (in our case an article) could have many attachments instead of just one. To accomplish this you’d create a new model, let’s call it “Attachment”, where each instance of the model can have one file using the same fields we put into Article above as well as an <code>article_id</code> field. The Attachment would then <code>belong_to</code> an article, and an article would <code>have_many</code> attachments.</p>
+<p>Paperclip supports automatic image resizing and it’s easy. In your model, you’d add an option like this:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">has_attached_file <span class="symbol">:image</span>, <span class="symbol">styles:</span> &#123; <span class="symbol">medium:</span> <span class="string">"300x300&gt;"</span>, <span class="symbol">thumb:</span> <span class="string">"100x100&gt;"</span> &#125;</span><br></pre></td></tr></table></figure>
+<p>This would automatically create a “medium” size where the largest dimension is 300 pixels and a “thumb” size where the largest dimension is 100 pixels. Then in your view, to display a specific version, you just pass in an extra parameter like this:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;%=<span class="ruby"> image_tag @article.image.url(<span class="symbol">:medium</span>) </span>%&gt;</span><br></pre></td></tr></table></figure>
+<p>If it’s so easy, why don’t we do it right now?  The catch is that paperclip doesn’t do the image manipulation itself, it relies on a package called <em>imagemagick</em>. Image processing libraries like this are notoriously difficult to install. If you’re on Linux, it might be as simple as <code>sudo apt-get install imagemagick</code>. On OS X, if you have Homebrew installed, it’d be <code>brew install imagemagick</code>. On windows you need to download and copy some EXEs and DLLs. It can be a hassle, which is why we won’t do it during this class.</p>
+<p>If you do manage to get imagemagick installed, be advised that the custom sizes will only take affect on those images uploaded <em>after</em> the imagemagick installation. In otherwords, when the image is uploaded - Paperclip will use Imagemagick to create the customized sizes specified on the <code>has_attached_file</code> line. However, there is a fix for this! Whenever you change your <code>has_attached_file</code> styles - whether adding, editing, or deleting - you can easily reprocess all existing images with <code>rake paperclip:refresh CLASS=Article</code>. Just replace ‘Article’ with the model name containing your Paperclip images in your other projects.  For more information, see this helpful post in the <a href="javascript:;" target="_blank" rel="external">Paperclip documentation</a>.</p>
+<h3 id="A-Few-Sass-Examples" class="article-heading"><a href="#A-Few-Sass-Examples" class="headerlink" title="A Few Sass Examples"></a>A Few Sass Examples<a class="article-anchor" href="#A-Few-Sass-Examples" aria-hidden="true"></a></h3><p>All the details about Sass can be found here: <a href="javascript:;" target="_blank" rel="external">http://sass-lang.com/</a></p>
+<p>We’re not focusing on CSS development, so here are a few styles that you can copy &amp; paste and modify to your heart’s content.<br>Place the following styles in a new file and save it as styles.css.scss in <code>app/assets/stylesheets/</code>.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$primary_color: #AAA;</span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">  background-color: $primary_color;</span><br><span class="line">  font: &#123;</span><br><span class="line">    family: Verdana, Helvetica, Arial;</span><br><span class="line">    size: 14px;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">a &#123;</span><br><span class="line">  color: #0000FF;</span><br><span class="line">  img &#123;</span><br><span class="line">    border: none;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.clear &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">  height: 0;</span><br><span class="line">  overflow: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#container &#123;</span><br><span class="line">  width: 75%;</span><br><span class="line">  margin: 0 auto;</span><br><span class="line">  background: #fff;</span><br><span class="line">  padding: 20px 40px;</span><br><span class="line">  border: solid 1px black;</span><br><span class="line">  margin-top: 20px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#content &#123;</span><br><span class="line">  clear: both;</span><br><span class="line">  padding-top: 20px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>If you refresh the page, it should look slightly different! But we didn’t add a reference to this stylesheet in our HTML; how did Rails know how to use it? The answer lies in Rails’ default layout.</p>
+<h3 id="Working-with-Layouts" class="article-heading"><a href="#Working-with-Layouts" class="headerlink" title="Working with Layouts"></a>Working with Layouts<a class="article-anchor" href="#Working-with-Layouts" aria-hidden="true"></a></h3><p>We’ve created about a dozen view templates between our different models. Imagine that Rails <em>didn’t</em> just figure it out. How would we add this new stylesheet to all of our pages? We <em>could</em> go into each of those templates and add a line like this at the top:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;%=<span class="ruby"> stylesheet_link_tag <span class="string">'styles'</span> </span>%&gt;</span><br></pre></td></tr></table></figure>
+<p>Which would find the Sass file we just wrote. That’s a lame job, imagine if we had 100 view templates. What if we want to change the name of the stylesheet later?  Ugh.</p>
+<p>Rails and Ruby both emphasize the idea of “D.R.Y.” – Don’t Repeat Yourself. In the area of view templates, we can achieve this by creating a <em>layout</em>. A layout is a special view template that wraps other views. Rails has given us one already: <code>app/views/layouts/application.html.erb</code>.</p>
+<p>Check out your <code>app/views/layouts/application.html.erb</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;title&gt;Blogger&lt;/title&gt;</span><br><span class="line">  &lt;%= stylesheet_link_tag    &quot;application&quot;, media: &quot;all&quot;, &quot;data-turbolinks-track&quot; =&gt; true %&gt;</span><br><span class="line">  &lt;%= javascript_include_tag &quot;application&quot;, &quot;data-turbolinks-track&quot; =&gt; true %&gt;</span><br><span class="line">  &lt;%= csrf_meta_tags %&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p class=&quot;flash&quot;&gt;</span><br><span class="line">  &lt;%= flash.notice %&gt;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">&lt;%= yield %&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>Whatever code is in the individual view template gets inserted into the layout where you see the <code>yield</code>. Using layouts makes it easy to add site-wide elements like navigation, sidebars, and so forth.</p>
+<p>See the <code>stylesheet_link_tag</code> line? It mentions ‘application.’ That means it should load up <code>app/assets/stylesheets/application.css</code>… Check out what’s in that file:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">/*</span><br><span class="line"> * This is a manifest file that&apos;ll be compiled into application.css, which will include all the files</span><br><span class="line"> * listed below.</span><br><span class="line"> *</span><br><span class="line"> * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,</span><br><span class="line"> * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.</span><br><span class="line"> *</span><br><span class="line"> * You&apos;re free to add application-wide styles to this file and they&apos;ll appear at the top of the</span><br><span class="line"> * compiled file, but it&apos;s generally better to create a new file per style scope.</span><br><span class="line"> *</span><br><span class="line"> *= require_self</span><br><span class="line"> *= require_tree .</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+<p>There’s that huge comment there that explains it: the <code>require_tree .</code> line automatically loads all of the stylesheets in the current directory, and includes them in <code>application.css</code>. Fun! This feature is called the <code>asset pipeline</code>, and it’s pretty new to Rails. It’s quite powerful.</p>
+<p>Now that you’ve tried out a plugin library (Paperclip), the “A Few Gems” tutorial is complete!</p>
+<h4 id="Saving-to-GitHub" class="article-heading"><a href="#Saving-to-GitHub" class="headerlink" title="Saving to GitHub."></a>Saving to GitHub.<a class="article-anchor" href="#Saving-to-GitHub" aria-hidden="true"></a></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;added a few gems&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2019-03-01T09:46:09.442Z" itemprop="dateModified">Last updated: 2019-03-01</time>
+                <a href="tagging.html" class="article-footer-prev" title="Tagging"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="authentication.html" class="article-footer-next" title="Authentication"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Using-the-Gemfile-to-Set-up-a-RubyGem"><span class="toc-text">Using the Gemfile to Set up a RubyGem</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Setting-up-the-Database-for-Paperclip"><span class="toc-text">Setting up the Database for Paperclip</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Modifying-the-Form-Template"><span class="toc-text">Modifying the Form Template</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Trying-it-Out"><span class="toc-text">Trying it Out</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Improving-the-Form"><span class="toc-text">Improving the Form</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Further-Notes-about-Paperclip"><span class="toc-text">Further Notes about Paperclip</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#A-Few-Sass-Examples"><span class="toc-text">A Few Sass Examples</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Working-with-Layouts"><span class="toc-text">Working with Layouts</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Saving-to-GitHub"><span class="toc-text">Saving to GitHub.</span></a></li></ol></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Build a Blog with Ruby on Rails</strong><a href="environment_setup.html" class="sidebar-link">Environment Setup</a><a href="up_and_running.html" class="sidebar-link">Up and Running</a><a href="form_based_workflow.html" class="sidebar-link">Form-based Workflow</a><a href="adding_comments.html" class="sidebar-link">Adding Comments</a><a href="tagging.html" class="sidebar-link">Tagging</a><a href="" class="sidebar-link current">A Few Gems</a><a href="authentication.html" class="sidebar-link">Authentication</a><a href="extras.html" class="sidebar-link">Extras</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      Copyright &copy; 2020 - <a href="javascript:;" target="_blank">leokhoa</a><br>
+    </div>
+    <div id="footer-links">
+      <a href="javascript:;" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="javascript:;" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="index1.html" class="mobile-nav-link">Docs</a>
+      <li class="mobile-nav-item">
+        <a href="javascript:;" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Build a Blog with Ruby on Rails</strong><a href="environment_setup.html" class="mobile-nav-link">Environment Setup</a><a href="up_and_running.html" class="mobile-nav-link">Up and Running</a><a href="form_based_workflow.html" class="mobile-nav-link">Form-based Workflow</a><a href="adding_comments.html" class="mobile-nav-link">Adding Comments</a><a href="tagging.html" class="mobile-nav-link">Tagging</a><a href="" class="mobile-nav-link current">A Few Gems</a><a href="authentication.html" class="mobile-nav-link">Authentication</a><a href="extras.html" class="mobile-nav-link">Extras</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="">
+      
+        <option value="en" selected="">English</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+
+<script src="static/js/lang_select.js"></script>
+
+
+<script src="static/js/scrollingelement.js"></script>
+
+
+<script src="static/js/toc.js"></script>
+
+
+<script src="static/js/mobile_nav.js"></script>
+
+<!-- endbuild -->
+<script src="static/js/retina.min.js" async=""></script>
+
+<!-- Algolia -->
+
+
+<!-- Particles -->
+
+<script src="static/js/particles.js"></script>
+
+
+<script type="text/javascript">
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 60,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 6,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.1,
+      "width": 2
+    },
+    "move": {
+      "enable": true,
+      "speed": 1.5,
+      "direction": "top",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+<!-- fastclick -->
+<script src="static/js/fastclick.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  FastClick.attach(document.body)
+}, false)
+</script>
+
+
+
+</body>
+</html>
