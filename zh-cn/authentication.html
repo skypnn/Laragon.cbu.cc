@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Authentication | Laragon - portable, isolated, fast & powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby.</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="microservices, nodejs, javascript">
+	<meta name="robots" content="index, follow">
+  <!-- Canonical links -->
+  <link rel="canonical" href="">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="https://laragon.org/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://laragon.org/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://laragon.org/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://laragon.org/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://laragon.org/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://laragon.org/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://laragon.org/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://laragon.org/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="https://laragon.org/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://laragon.org/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://laragon.org/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/moleculer.css -->
+  
+<link rel="stylesheet" href="static/css/moleculer.css">
+
+  <!-- endbuild -->
+  <link href="static/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/docsearch.min.css">
+  <!-- RSS 
+  <link rel="alternate" href="/atom.xml" title="Laragon - portable, isolated, fast & powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby.">
+  -->
+  <!-- Open Graph -->
+  <meta name="description" content="Authentication is an important part of almost any web application and there are several approaches to take. Thankfully some of these have been put together in plugins so we don’t have to reinvent the">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Authentication">
+<meta property="og:url" content="https://laragon.org/rails/authentication">
+<meta property="og:site_name" content="Laragon - portable, isolated, fast &amp; powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby.">
+<meta property="og:description" content="Authentication is an important part of almost any web application and there are several approaches to take. Thankfully some of these have been put together in plugins so we don’t have to reinvent the">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-03-01T09:46:09.443Z">
+<meta property="article:modified_time" content="2019-03-01T09:46:09.443Z">
+<meta property="article:author" content="leokhoa">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="leovn">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-617943-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  <!-- Github Button -->
+  <script async="" defer="" src="static/js/buttons.js"></script>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="index.html" id="logo">Laragon</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="index1.html" class="main-nav-link">Docs</a>
+	<!--
+      <a href="https://github.com/leokhoa/laragon" target="_blank" rel="noopener" class="main-nav-link">Github</a>
+      <div id="search-input-wrap" class="on">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+	-->
+	 <a href="index2.html" class="main-nav-link">Why Laragon?</a>
+    <a href="index3.html" class="main-nav-link">Testimonials</a>
+    <a href="index4.html" class="main-nav-link">Download</a>
+    <a href="index5.html" class="main-nav-link">About</a>
+    <a href="index6.html" target="_blank" rel="noopener" class="main-nav-link">Community</a>
+    
+   
+    
+
+
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="">
+        
+          <option value="en" selected="">English</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+  <div id="container">
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope="" itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Authentication</h1>
+                <a href="javascript:;" target="_blank" rel="noopener" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>Authentication is an important part of almost any web application and there are several approaches to take. Thankfully some of these have been put together in plugins so we don’t have to reinvent the wheel.</p>
+<p>There are two popular gems for authentication: One is named <a href="javascript:;" target="_blank" rel="external">AuthLogic</a> and <strong>JumpStartLab</strong> wrote up an iteration using it for the <a href="javascript:;" target="_blank" rel="external">Merchant</a> tutorial, but it is a little complicated for a Rails novice. You have to create several different models, controllers, and views manually. The documentation is kind of confusing, and I don’t think my tutorial is that much better. The second is called <a href="javascript:;" target="_blank" rel="external">Devise</a>, and while it’s the gold standard for Rails 3 applications, it is also really complicated.</p>
+<p><a href="javascript:;" target="_blank" rel="external">Sorcery</a> is a lightweight and straightforward authentication service gem. It strikes a good balance of functionality and complexity.</p>
+<h3 id="Installing-Sorcery" class="article-heading"><a href="#Installing-Sorcery" class="headerlink" title="Installing Sorcery"></a>Installing Sorcery<a class="article-anchor" href="#Installing-Sorcery" aria-hidden="true"></a></h3><p>Sorcery is just a gem like any other useful package of Ruby code, so to use it in our Blogger application we’ll need to add the following lines to our Gemfile:<br><figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">gem <span class="string">'sorcery'</span></span><br><span class="line">gem <span class="string">'bcrypt'</span></span><br></pre></td></tr></table></figure></p>
+  <p>When specifying and installing a new gem you will need to restart your Rails Server</p>
+
+<p>Then at your terminal, instruct Bundler to install any newly-required gems:</p>
+<p><em>Note: For Windows, to avoid any issue - you should install <strong>bcrypt</strong> first with this command:</em><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gem install bcrypt --platform=ruby</span><br></pre></td></tr></table></figure></p>
+<p>then run <code>bundle</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bundle</span><br></pre></td></tr></table></figure></p>
+<p>Once you’ve installed the gem via Bundler, you can test that it’s available with this command at your terminal:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rails generate</span><br></pre></td></tr></table></figure>
+<p>Somewhere in the middle of the output you should see the following:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rails generate</span><br><span class="line">...</span><br><span class="line">Sorcery:</span><br><span class="line">  sorcery:install</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>If it’s there, you’re ready to go!</p>
+<h3 id="Running-the-Generator" class="article-heading"><a href="#Running-the-Generator" class="headerlink" title="Running the Generator"></a>Running the Generator<a class="article-anchor" href="#Running-the-Generator" aria-hidden="true"></a></h3><p>This plugin makes it easy to get up and running by providing a generator that creates a model representing our user and the required data migrations to support authentication. Although Sorcery provides options to support nice features like session-based “remember me”, automatic password-reset through email, and authentication against external services such as Twitter, we’ll just run the default generator to allow simple login with an email and password.</p>
+<p>One small bit of customization we will do is to rename the default model created by Sorcery from “User” to “Author”, which gives us a more domain-relevant name to work with. Run this from your terminal:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rails generate sorcery:install --model=Author</span><br></pre></td></tr></table></figure>
+<p>Take a look at the output and you’ll see roughly the following:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  create  config/initializers/sorcery.rb              </span><br><span class="line">generate  model Author --skip-migration               </span><br><span class="line">  invoke  active_record                               </span><br><span class="line">  create    app/models/author.rb                      </span><br><span class="line">  invoke    test_unit                                 </span><br><span class="line">  create      test/models/author_test.rb              </span><br><span class="line">  create      test/fixtures/authors.yml               </span><br><span class="line">  insert  app/models/author.rb                        </span><br><span class="line">  insert  app/models/author.rb                        </span><br><span class="line">  create  db/migrate/20170703091717_sorcery_core.rb</span><br></pre></td></tr></table></figure>
+<p>Let’s look at the SorceryCore migration that the generator created before we migrate the database. If you wanted your User models to have any additional information (like “department_name” or “favorite_color”) you could add columns for that, or you could create an additional migration at this point to add those fields.</p>
+<p>For this tutorial, you will need to add the username column to the Author model. To do that, open the migration file <code>*_sorcery_core.rb</code> file under <code>db/migrate</code> and make sure your file looks like this:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SorceryCore</span> &lt; ActiveRecord::Migration</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">change</span></span></span><br><span class="line">    create_table <span class="symbol">:authors</span> <span class="keyword">do</span> <span class="params">|t|</span></span><br><span class="line">      t.string <span class="symbol">:username</span>,         <span class="symbol">:null</span> =&gt; <span class="literal">false</span></span><br><span class="line">      t.string <span class="symbol">:email</span>,            <span class="symbol">:null</span> =&gt; <span class="literal">false</span></span><br><span class="line">      t.string <span class="symbol">:crypted_password</span>, <span class="symbol">:null</span> =&gt; <span class="literal">false</span></span><br><span class="line">      t.string <span class="symbol">:salt</span>,             <span class="symbol">:null</span> =&gt; <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">      t.timestamps</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">    add_index <span class="symbol">:authors</span>, <span class="symbol">:email</span>, <span class="symbol">unique:</span> <span class="literal">true</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>So go to your terminal and enter:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rake db:migrate</span><br></pre></td></tr></table></figure>
+<p>Let’s see what Sorcery created inside of the file <code>app/models/author.rb</code>:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Author</span> &lt; ActiveRecord::Base</span></span><br><span class="line">  authenticates_with_sorcery!</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>We can see it added a declaration of some kind indicating our Author class authenticates via the sorcery gem. We’ll come back to this later.</p>
+<h3 id="Creating-a-First-Account" class="article-heading"><a href="#Creating-a-First-Account" class="headerlink" title="Creating a First Account"></a>Creating a First Account<a class="article-anchor" href="#Creating-a-First-Account" aria-hidden="true"></a></h3><p>First, stop then restart your server to make sure it’s picked up the newly generated code.</p>
+<p>Though we could certainly drop into the Rails console to create our first user, it will be better to create and test our form-based workflow by creating a user through it.</p>
+<p>We don’t have any create, read, update, and destroy (CRUD) support for our Author model. We could define them again manually as we did with Article. Instead we are going to rely on the Rails code controller scaffold generator.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rails generate scaffold_controller Author username:string email:string password:password password_confirmation:password</span><br></pre></td></tr></table></figure>
+<p>Rails has two scaffold generators: <strong>scaffold</strong> and <strong>scaffold_controller</strong>. The <strong>scaffold</strong> generator generates the model, controller and views. The <strong>scaffold_controller</strong> will generate the controller and views. We are generating a <strong>scaffold_controller</strong> instead of <strong>scaffold</strong> because Sorcery has already defined for us an Author model.</p>
+<p>As usual, the command will have printed all generated files.</p>
+<p>The generator did a good job generating most of our fields correctly, however, it did not know that we want our password field and password confirmation field to use a password text entry. So we need to update the <code>authors/_form.html.erb</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;field&quot;&gt;</span><br><span class="line">  &lt;%= f.label :password %&gt;&lt;br /&gt;</span><br><span class="line">  &lt;%= f.password_field :password %&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;field&quot;&gt;</span><br><span class="line">  &lt;%= f.label :password_confirmation %&gt;&lt;br /&gt;</span><br><span class="line">  &lt;%= f.password_field :password_confirmation %&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>When we created the controller and the views we provided a <code>password</code> field and a <code>password_confirmation</code> field. When an author is creating their account we want to ensure that they do not make a mistake when entering their password, so we are requiring that they repeat their password. If the two do not match, we know our record should be invalid, otherwise the user could have mistakenly set their password to something other than what they expected.</p>
+<p>To provide this validation when an author submits the form we need to define this relationship within the model (<code>app\models\author.rb</code>).</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Author</span> &lt; ActiveRecord::Base</span></span><br><span class="line">  authenticates_with_sorcery!</span><br><span class="line">  validates_confirmation_of <span class="symbol">:password</span>, <span class="symbol">message:</span> <span class="string">"should match confirmation"</span>, <span class="symbol">if:</span> <span class="symbol">:password</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>The <code>password</code> and <code>password_confirmation</code> fields are sometimes referred to as “virtual attributes” because they are not actually being stored in the database. Instead, Sorcery uses the given password along with the automatically generated <code>salt</code> value to create and store the <code>crypted_password</code> value.</p>
+<p>Visiting <a href="javascript:;" target="_blank" rel="external">http://localhost:3000/authors</a> at this moment we will find a routing error. The generator did not add a resource for our Authors. We need to update our <code>routes.rb</code> file:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">Rails.Application.routes.draw <span class="keyword">do</span></span><br><span class="line">  <span class="comment"># ... other resources we have defined ...</span></span><br><span class="line">  resources <span class="symbol">:authors</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>With this in place, we can now go to<br><a href="javascript:;" target="_blank" rel="external">http://localhost:3000/authors/new</a> and we should see the new user form. Let’s enter in “admin@example.com” for email, and “password” for the password and password_confirmation fields, then click “Create Author”. We should be taken to the show page for our new Author user.</p>
+<p>Now it’s displaying the password and password_confirmation text here, lets delete that! Edit your <code>app/views/authors/show.html.erb</code> page to remove those from the display.</p>
+<p>If you click <em>Back</em>, you’ll see that the <code>app/views/authors/index.html.erb</code> page also shows the password and password_confirmation. Edit the file to remove these as well.</p>
+<p>We can see that we’ve created a user record in the system, but we can’t really tell if we’re logged in. Sorcery provides a couple of methods for our views that can help us out: <code>current_user</code> and <code>logged_in?</code>. The <code>current_user</code> method will return the currently logged-in user if one exists and <code>nil</code> otherwise, and <code>logged_in?</code> returns <code>true</code> if a user is logged in and <code>false</code> if not.</p>
+<p>Let’s open <code>app/views/layouts/application.html.erb</code> and add a little footer so the whole <code>&lt;body&gt;</code> chunk looks like this:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;p class=&quot;flash&quot;&gt;</span><br><span class="line">    &lt;%= flash.notice %&gt;</span><br><span class="line">  &lt;/p&gt;</span><br><span class="line">  &lt;div id=&quot;container&quot;&gt;</span><br><span class="line">    &lt;div id=&quot;content&quot;&gt;</span><br><span class="line">      &lt;%= yield %&gt;</span><br><span class="line">      &lt;hr&gt;</span><br><span class="line">      &lt;h6&gt;</span><br><span class="line">        &lt;% if logged_in? %&gt;</span><br><span class="line">          &lt;%= &quot;Logged in as #&#123;current_user.email&#125;&quot; %&gt;</span><br><span class="line">        &lt;% else %&gt;</span><br><span class="line">          Logged out</span><br><span class="line">        &lt;% end %&gt;</span><br><span class="line">      &lt;/h6&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>The go to <a href="javascript:;" target="_blank" rel="external">http://localhost:3000/articles/</a> and you should see “Logged out” on the bottom of the page.</p>
+<h3 id="Logging-In" class="article-heading"><a href="#Logging-In" class="headerlink" title="Logging In"></a>Logging In<a class="article-anchor" href="#Logging-In" aria-hidden="true"></a></h3><p>How do we log in to our Blogger app? We can’t yet! We need to build the actual endpoints for logging in and out, which means we need controller actions for them. We’ll create an AuthorSessions controller and add in the necessary actions: new, create, and destroy.</p>
+<p>First, let’s generate the AuthorSessions controller:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rails generate controller AuthorSessions</span><br></pre></td></tr></table></figure>
+<p>Now we’ll add <code>new</code>, <code>create</code>, and <code>destroy</code> methods to <code>app/controllers/author_sessions_controller.rb</code>:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">AuthorSessionsController</span> &lt; ApplicationController</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">new</span></span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">create</span></span></span><br><span class="line">    <span class="keyword">if</span> login(params[<span class="symbol">:email</span>], params[<span class="symbol">:password</span>])</span><br><span class="line">      redirect_back_or_to(articles_path, <span class="symbol">notice:</span> <span class="string">'Logged in successfully.'</span>)</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      flash.now.alert = <span class="string">"Login failed."</span></span><br><span class="line">      render <span class="symbol">action:</span> <span class="symbol">:new</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">destroy</span></span></span><br><span class="line">    logout</span><br><span class="line">    redirect_to(<span class="symbol">:authors</span>, <span class="symbol">notice:</span> <span class="string">'Logged out!'</span>)</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>As is common for Rails apps, the <code>new</code> action is responsible for rendering the related form, the <code>create</code> action accepts the submission of that form, and the <code>destroy</code> action removes a record of the appropriate type. In this case, our records are the Author objects that represent a logged-in user.</p>
+<p>Let’s create the template for the <code>new</code> action that contains the login form, in <code>app/views/author_sessions/new.html.erb</code>: </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h1&gt;Login&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">&lt;%= form_tag author_sessions_path, method: :post do %&gt;</span><br><span class="line">  &lt;div class=&quot;field&quot;&gt;</span><br><span class="line">    &lt;%= label_tag :email %&gt;</span><br><span class="line">    &lt;%= text_field_tag :email %&gt;</span><br><span class="line">    &lt;br/&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;field&quot;&gt;</span><br><span class="line">    &lt;%= label_tag :password %&gt;</span><br><span class="line">    &lt;%= password_field_tag :password %&gt;</span><br><span class="line">    &lt;br/&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;actions&quot;&gt;</span><br><span class="line">    &lt;%= submit_tag &quot;Login&quot; %&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;% end %&gt;</span><br><span class="line"></span><br><span class="line">&lt;%= link_to &apos;Back&apos;, articles_path %&gt;</span><br></pre></td></tr></table></figure>
+<p>The <code>create</code> action handles the logic for logging in, based on the parameters passed from the rendered form: email and password. If the login is successful, the user is redirected to the articles index, or if the user had been trying to access a restricted page, back to that page. If the login fails, we’ll re-render the login form. The <code>destroy</code> action calls the <code>logout</code> method provided by Sorcery and then redirects.</p>
+<p>Next we need some routes so we can access those actions from our browser. Open up <code>config/routes.rb</code> and make sure it includes the following:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">resources <span class="symbol">:author_sessions</span>, <span class="symbol">only:</span> [ <span class="symbol">:new</span>, <span class="symbol">:create</span>, <span class="symbol">:destroy</span> ]</span><br><span class="line"></span><br><span class="line">get <span class="string">'login'</span>  =&gt; <span class="string">'author_sessions#new'</span></span><br><span class="line">get <span class="string">'logout'</span> =&gt; <span class="string">'author_sessions#destroy'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rake routes</span><br><span class="line"></span><br><span class="line">   # ... other routes for Articles and Comments ...</span><br><span class="line">   author_sessions POST   /author_sessions(.:format)     author_sessions#create</span><br><span class="line">new_author_session GET    /author_sessions/new(.:format) author_sessions#new</span><br><span class="line">    author_session DELETE /author_sessions/:id(.:format) author_sessions#destroy</span><br><span class="line">             login        /login(.:format)               author_sessions#new</span><br><span class="line">            logout        /logout(.:format)              author_sessions#destroy</span><br></pre></td></tr></table></figure>
+<p>Our Author Sessions are similar to other resources in our system. However, we only want to open a smaller set of actions. An author is able to be presented with a login page (:new), login (:create), and logout (:destroy). It does not make sense for it to provide an index, or edit and update session data.</p>
+<p>The last two entries create aliases to our author sessions actions.</p>
+<p>Externally we want our authors to visit pages that make the most sense to them:</p>
+<ul>
+<li><a href="javascript:;" target="_blank" rel="external">http://localhost:3000/login</a></li>
+<li><a href="javascript:;" target="_blank" rel="external">http://localhost:3000/logout</a></li>
+</ul>
+<p>Internally we also want to use path and url helpers that make the most sense:</p>
+<ul>
+<li>login_path, login_url</li>
+<li>logout_path, logout_url</li>
+</ul>
+<p>Now we can go back to our footer in <code>app/views/layouts/application.html.erb</code><br>and update it to include some links:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;p class="flash"&gt;</span><br><span class="line">    &lt;%=<span class="ruby"> flash.notice </span>%&gt;</span><br><span class="line">  &lt;/p&gt;</span><br><span class="line">  &lt;div id="container"&gt;</span><br><span class="line">    &lt;div id="content"&gt;</span><br><span class="line">      &lt;%=<span class="ruby"> <span class="keyword">yield</span> </span>%&gt;</span><br><span class="line">      &lt;hr&gt;</span><br><span class="line">      &lt;h6&gt;</span><br><span class="line">        &lt;%<span class="ruby"> <span class="keyword">if</span> logged_in? </span>%&gt;</span><br><span class="line">          &lt;%=<span class="ruby"> <span class="string">"Logged in as <span class="subst">#&#123;current_user.email&#125;</span>"</span> </span>%&gt;</span><br><span class="line">          &lt;%=<span class="ruby"> link_to <span class="string">"(logout)"</span>, logout_path </span>%&gt;</span><br><span class="line">        &lt;%<span class="ruby"> <span class="keyword">else</span> </span>%&gt;</span><br><span class="line">          &lt;%=<span class="ruby"> link_to <span class="string">"(login)"</span>, login_path </span>%&gt;</span><br><span class="line">        &lt;%<span class="ruby"> <span class="keyword">end</span> </span>%&gt;</span><br><span class="line">      &lt;/h6&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>Now we should be able to log in and log out, and see our status reflected in the footer. Let’s try this a couple of times to confirm we’ve made it to this point successfully.<br>(You may need to restart the rails server to successfully log in.)</p>
+<h3 id="Securing-New-Users" class="article-heading"><a href="#Securing-New-Users" class="headerlink" title="Securing New Users"></a>Securing New Users<a class="article-anchor" href="#Securing-New-Users" aria-hidden="true"></a></h3><p>It looks like we can create a new user and log in as that user, but I still want to make some more changes. We’re just going to use one layer of security for the app – a user who is logged in has access to all the comments and pages, while a user who isn’t logged in can only post comments and try to login. But that scheme will breakdown if just anyone can go to this URL and create an account, right?</p>
+<p>Let’s add in a protection scheme like this to the new users form:</p>
+<ul>
+<li>If there are zero users in the system, let anyone access the form</li>
+<li>If there are more than zero users registered, only users already logged in can access this form</li>
+</ul>
+<p>That way when the app is first setup we can create an account, then new users can only be created by a logged in user.</p>
+<p>We can create a <code>before_action</code> which will run <em>before</em> the <code>new</code> and <code>create</code> actions of our <code>authors_controller.rb</code>. Open that controller and put all this code in:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">before_action <span class="symbol">:zero_authors_or_authenticated</span>, <span class="symbol">only:</span> [<span class="symbol">:new</span>, <span class="symbol">:create</span>]</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">zero_authors_or_authenticated</span></span></span><br><span class="line">  <span class="keyword">unless</span> Author.count == <span class="number">0</span> <span class="params">||</span> current_user</span><br><span class="line">    redirect_to root_path</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>The first line declares that we want to run a before action named <code>zero_authors_or_authenticated</code> when either the <code>new</code> or <code>create</code> methods are accessed. Then we define that action, checking if there are either zero registered users OR if there is a user already logged in. If neither of those is true, we redirect to the root path (our articles list) and return false. If either one of them is true this action won’t do anything, allowing the requested user registration form to be rendered.</p>
+<p>With that in place, try accessing <code>authors/new</code> when you’re logged in and when you’re logged out. If you want to test that it works when no users exist, try this at your console:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">Author.destroy_all</span><br></pre></td></tr></table></figure>
+<p>Then try to reach the registration form and it should work!  Create yourself an account if you’ve destroyed it.</p>
+<h3 id="Securing-the-Rest-of-the-Application" class="article-heading"><a href="#Securing-the-Rest-of-the-Application" class="headerlink" title="Securing the Rest of the Application"></a>Securing the Rest of the Application<a class="article-anchor" href="#Securing-the-Rest-of-the-Application" aria-hidden="true"></a></h3><p>The first thing we need to do is sprinkle <code>before_action</code> on most of our controllers:</p>
+<ul>
+<li>In <code>authors_controller</code>, add a before action to protect the actions besides <code>new</code> and <code>create</code> like this:<br><code>before_action :require_login, except: [:new, :create]</code></li>
+<li>In <code>author_sessions_controller</code> all the methods need to be accessible to allow login and logout</li>
+<li>In <code>tags_controller</code>, we need to prevent unauthenticated users from deleting the tags, so we protect just <code>destroy</code>. Since this is only a single action we can use <code>:only</code> like this:<br><code>before_action :require_login, only: [:destroy]</code></li>
+<li>In <code>comments_controller</code>, we never implemented <code>index</code> and <code>destroy</code>, but just in case we do let’s allow unauthenticated users to only access <code>create</code>:<br><code>before_action :require_login, except: [:create]</code></li>
+<li>In <code>articles_controller</code> authentication should be required for <code>new</code>, <code>create</code>, <code>edit</code>, <code>update</code> and <code>destroy</code>. Figure out how to write the before action using either <code>:only</code> or <code>:except</code></li>
+</ul>
+<p>Now our app is pretty secure, but we should hide all those edit, destroy, and new article links from unauthenticated users.</p>
+<p>Open <code>app/views/articles/show.html.erb</code> and find the section where we output the “Actions”. Wrap that whole section in an <code>if</code> clause like this:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;%<span class="ruby"> <span class="keyword">if</span> logged_in? </span>%&gt;</span><br><span class="line"></span><br><span class="line">&lt;%<span class="ruby"> <span class="keyword">end</span> </span>%&gt;</span><br></pre></td></tr></table></figure>
+<p>Look at the article listing in your browser when you’re logged out and make sure those links disappear. Then use the same technique to hide the “Create a New Article” link. Similarly, hide the ‘delete’ link for the tags index.</p>
+<p>Your basic authentication is done, and the “Authentication” tutorial is complete!</p>
+<h3 id="Extra-Credit" class="article-heading"><a href="#Extra-Credit" class="headerlink" title="Extra Credit"></a>Extra Credit<a class="article-anchor" href="#Extra-Credit" aria-hidden="true"></a></h3><p>We now have the concept of authenticated users, represented by our <code>Author</code> class, in our blogging application, and it’s authors who are allowed to create and edit articles. What could be done to make the ownership of articles more explicit and secure, and how could we restrict articles to being edited only by their original owner?</p>
+<h4 id="Saving-to-GitHub" class="article-heading"><a href="#Saving-to-GitHub" class="headerlink" title="Saving to GitHub."></a>Saving to GitHub.<a class="article-anchor" href="#Saving-to-GitHub" aria-hidden="true"></a></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;Sorcery authentication complete&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<p>That is the last commit for this project!  If you would like to review your previous commits, you can do so with the git log command in terminal:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git log</span><br><span class="line">commit 0be8c0f7dc92322dd31f579d9a91ebc8e0fac443</span><br><span class="line">Author: your_name your_email</span><br><span class="line">Date:   Mon Jul 3 14:38:06 2017 +0700</span><br><span class="line">    Sorcery authentication complete</span><br><span class="line">and so on...</span><br></pre></td></tr></table></figure>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2019-03-01T09:46:09.443Z" itemprop="dateModified">Last updated: 2019-03-01</time>
+                <a href="a_few_gems.html" class="article-footer-prev" title="A Few Gems"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="extras.html" class="article-footer-next" title="Extras"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Installing-Sorcery"><span class="toc-text">Installing Sorcery</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Running-the-Generator"><span class="toc-text">Running the Generator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Creating-a-First-Account"><span class="toc-text">Creating a First Account</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Logging-In"><span class="toc-text">Logging In</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Securing-New-Users"><span class="toc-text">Securing New Users</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Securing-the-Rest-of-the-Application"><span class="toc-text">Securing the Rest of the Application</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extra-Credit"><span class="toc-text">Extra Credit</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Saving-to-GitHub"><span class="toc-text">Saving to GitHub.</span></a></li></ol></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Build a Blog with Ruby on Rails</strong><a href="environment_setup.html" class="sidebar-link">Environment Setup</a><a href="up_and_running.html" class="sidebar-link">Up and Running</a><a href="form_based_workflow.html" class="sidebar-link">Form-based Workflow</a><a href="adding_comments.html" class="sidebar-link">Adding Comments</a><a href="tagging.html" class="sidebar-link">Tagging</a><a href="a_few_gems.html" class="sidebar-link">A Few Gems</a><a href="" class="sidebar-link current">Authentication</a><a href="extras.html" class="sidebar-link">Extras</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      Copyright &copy; 2020 - <a href="javascript:;" target="_blank">leokhoa</a><br>
+    </div>
+    <div id="footer-links">
+      <a href="javascript:;" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="javascript:;" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="index1.html" class="mobile-nav-link">Docs</a>
+      <li class="mobile-nav-item">
+        <a href="javascript:;" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Build a Blog with Ruby on Rails</strong><a href="environment_setup.html" class="mobile-nav-link">Environment Setup</a><a href="up_and_running.html" class="mobile-nav-link">Up and Running</a><a href="form_based_workflow.html" class="mobile-nav-link">Form-based Workflow</a><a href="adding_comments.html" class="mobile-nav-link">Adding Comments</a><a href="tagging.html" class="mobile-nav-link">Tagging</a><a href="a_few_gems.html" class="mobile-nav-link">A Few Gems</a><a href="" class="mobile-nav-link current">Authentication</a><a href="extras.html" class="mobile-nav-link">Extras</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="">
+      
+        <option value="en" selected="">English</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+
+<script src="static/js/lang_select.js"></script>
+
+
+<script src="static/js/scrollingelement.js"></script>
+
+
+<script src="static/js/toc.js"></script>
+
+
+<script src="static/js/mobile_nav.js"></script>
+
+<!-- endbuild -->
+<script src="static/js/retina.min.js" async=""></script>
+
+<!-- Algolia -->
+
+
+<!-- Particles -->
+
+<script src="static/js/particles.js"></script>
+
+
+<script type="text/javascript">
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 60,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 6,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.1,
+      "width": 2
+    },
+    "move": {
+      "enable": true,
+      "speed": 1.5,
+      "direction": "top",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+<!-- fastclick -->
+<script src="static/js/fastclick.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  FastClick.attach(document.body)
+}, false)
+</script>
+
+
+
+</body>
+</html>

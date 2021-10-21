@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Installation | Laragon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="content-type" content="text/html; charset=UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta property="og:site_name" content="Laragon">
+	<meta name="keywords">
+	<meta name="msapplication-badge" content="frequency=30; polling-uri=https://forum.laragon.org/sitemap.xml">
+	<meta name="msapplication-square150x150logo">
+	<meta name="title" content="Installation">
+	<meta property="og:title" content="Installation">
+	<meta name="description">
+	<meta property="og:type" content="website">
+	<link rel="stylesheet" type="text/css" href="static/css/stylesheet.css">
+	
+	<link rel="icon" type="image/x-icon" href="https://forum.laragon.org/favicon.ico?0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="manifest" href="https://forum.laragon.org/manifest.json">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/uploads.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/drafts.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/tags.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/categoryList.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/resize.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/composer/autocomplete.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/templates/composer.tpl?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/language/en-US/topic.json?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/language/en-US/modules.json?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/language/en-US/tags.json?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="stylesheet" href="static/css/railscasts.css">
+	<link rel="prefetch" href="https://forum.laragon.org/src/modules/highlight.js?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="prefetch" href="https://forum.laragon.org/api/language/en-US/markdown?v=0130c7a1-1f08-4b64-8dea-be127e4ad8e9">
+	<link rel="alternate" type="application/rss+xml" href="https://forum.laragon.org/category/7.rss">
+	<link rel="up" href="index6.html">
+	<link rel="next" href="https://forum.laragon.org/category/7/installation?page=2">
+
+	<!--[if lt IE 9]>
+  		<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.min.js"></script>
+  		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  		<script>__lt_ie_9__ = 1;</script>
+	<![endif]-->
+
+	<script>
+		var RELATIVE_PATH = "";
+		var config = JSON.parse('{"relative_path":"","version":"1.4.0","siteTitle":"Laragon","browserTitle":"Laragon","titleLayout":"&#123;pageTitle&#125; | &#123;browserTitle&#125;","showSiteTitle":true,"minimumTitleLength":"10","maximumTitleLength":"255","minimumPostLength":"10","maximumPostLength":"32767","minimumTagsPerTopic":"0","maximumTagsPerTopic":"5","minimumTagLength":3,"maximumTagLength":15,"hasImageUploadPlugin":true,"useOutgoingLinksPage":false,"allowGuestSearching":false,"allowGuestUserSearching":false,"allowGuestHandles":false,"allowFileUploads":true,"allowTopicsThumbnail":false,"usePagination":true,"disableChat":false,"disableChatMessageEditing":false,"socketioTransports":["polling","websocket"],"websocketAddress":"","maxReconnectionAttempts":5,"reconnectionDelay":1500,"topicsPerPage":"20","postsPerPage":"20","maximumFileSize":"2048","theme:id":"nodebb-theme-persona","theme:src":"","defaultLang":"en-US","userLang":"en-US","loggedIn":false,"cache-buster":"0130c7a1-1f08-4b64-8dea-be127e4ad8e9","requireEmailConfirmation":true,"topicPostSort":"oldest_to_newest","categoryTopicSort":"newest_to_oldest","csrf_token":"R7azZM6Y-ptBtJ5LyFxygLG8j_MGki8G34M4","searchEnabled":true,"bootswatchSkin":"default","timeagoCutoff":30,"cookies":{"enabled":false,"message":"\\\\[\\\\[global:cookies.message\\\\]\\\\]","dismiss":"\\\\[\\\\[global:cookies.accept\\\\]\\\\]","link":"\\\\[\\\\[global:cookies.learn_more\\\\]\\\\]"},"topicSearchEnabled":false,"delayImageLoading":true,"composer-default":{},"markdown":{"highlight":1,"theme":"railscasts.css"},"hideSubCategories":false,"hideCategoryLastPost":false,"question-and-answer":{"makeDefault":"on","defaultCid":"4","forceQuestions":"off"}}');
+		var app = {
+			template: "category",
+			user: JSON.parse('{"uid":0,"username":"Guest","userslug":"","email":"","picture":"","status":"offline","reputation":0,"email:confirmed":false,"isAdmin":false,"isGlobalMod":false,"isMod":false,"isEmailConfirmSent":false}')
+		};
+	</script>
+
+	<script src="static/js/nodebb.min.js"></script>
+
+	
+
+	
+	
+</head>
+
+<body class="page-category page-category-7 page-category-installation skin-default">
+	<nav id="menu" class="hidden">
+		<section class="menu-profile">
+			
+		</section>
+
+		<section class="menu-section" data-section="navigation">
+			<h3 class="menu-section-title">Navigation</h3>
+			<ul class="menu-section-list"></ul>
+		</section>
+
+		
+	</nav>
+
+	<main id="panel">
+		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
+			<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" id="mobile-menu">
+					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o" data-content="0"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="index6.html">
+					<img alt="" class="hide forum-logo" src="">
+				</a>
+								<a href="index6.html">
+					<h1 class="navbar-brand forum-title">Laragon</h1>
+				</a>
+
+				<div component="navbar/title" class="visible-xs hidden">
+					<span></span>
+				</div>
+			</div>
+
+			<div id="nav-dropdown" class="hidden-xs">
+												<ul id="logged-out-menu" class="nav navbar-nav navbar-right">
+					
+					<li>
+						<a href="login26.html">
+							<i class="fa fa-sign-in visible-xs-inline"></i>
+							<span>Login</span>
+						</a>
+					</li>
+				</ul>
+								<ul class="nav navbar-nav navbar-right">
+					<li>
+						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET" action="">
+							<button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw" title="Search"></i></button>
+							<div class="hidden" id="search-fields">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search" name="query" value="">
+									<a href="#"><i class="fa fa-gears fa-fw advanced-search-link"></i></a>
+								</div>
+								<button type="submit" class="btn btn-default hide">Search</button>
+							</div>
+						</form>
+					</li>
+					<li class="visible-xs" id="search-menu">
+						<a href="login27.html">
+							<i class="fa fa-search fa-fw"></i> Search
+						</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right hidden-xs">
+					<li>
+						<a href="#" id="reconnect" class="hide" title="Connection to Laragon has been lost, attempting to reconnect...">
+							<i class="fa fa-check"></i>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md">
+					<li class="dropdown">
+						<i class="fa fa-angle-double-up pointer fa-fw pagetop"></i>
+						<i class="fa fa-angle-up pointer fa-fw pageup"></i>
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<span class="pagination-text"></span>
+						</a>
+
+						<i class="fa fa-angle-down pointer fa-fw pagedown"></i>
+						<i class="fa fa-angle-double-down pointer fa-fw pagebottom"></i>
+
+						<div class="progress-container">
+							<div class="progress-bar"></div>
+						</div>
+
+						<ul class="dropdown-menu" role="menu">
+  							<input type="text" class="form-control" id="indexInput" placeholder="Enter index">
+  						</ul>
+					</li>
+				</ul>
+
+				<ul id="main-nav" class="nav navbar-nav">
+															<li class="">
+						<a href="categories.html" title="Categories">
+														<i class="fa fa-fw fa-list"></i>
+
+														<span class="visible-xs-inline">Categories</span>
+						</a>
+					</li>
+					
+										<li class="">
+						<a href="tags.html" title="Tags">
+														<i class="fa fa-fw fa-tags"></i>
+
+														<span class="visible-xs-inline">Tags</span>
+						</a>
+					</li>
+										<li class="">
+						<a href="popular.html" title="Popular">
+														<i class="fa fa-fw fa-fire"></i>
+
+														<span class="visible-xs-inline">Popular</span>
+						</a>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+
+			</div>
+		</nav>
+		<div class="container" id="content">
+	<noscript>
+		<div class="alert alert-danger">
+			<p>
+				Your browser does not seem to support JavaScript. As a result, your viewing experience will be diminished, and you have been placed in <strong>read-only mode</strong>.
+			</p>
+			<p>
+				Please download a browser that supports JavaScript, or enable it if it's disabled (i.e. NoScript).
+			</p>
+		</div>
+	</noscript>
+<ol class="breadcrumb">
+		<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+		<a href="index6.html" itemprop="url">
+			<span itemprop="title">
+				Home
+				
+			</span>
+		</a>
+	</li>
+	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+		<a href="javascript:;" itemprop="url">
+			<span itemprop="title">
+				Documents
+				
+			</span>
+		</a>
+	</li>
+	<li component="breadcrumb/current" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
+		
+			<span itemprop="title">
+				Installation
+												<a target="_blank" href="javascript:;"><i class="fa fa-rss-square"></i></a>
+			</span>
+		
+	</li>
+</ol>
+<div widget-area="header"></div>
+<div class="row">
+	<div class="category col-lg-12 col-sm-12" has-widget-class="category col-lg-9 col-sm-12" has-widget-target="sidebar">
+<div class="subcategory">
+	
+
+	<ul class="categories" itemscope="" itemtype="http://www.schema.org/ItemList">
+		
+	</ul>
+</div>
+
+		
+
+		<div class="clearfix">
+											<a component="category/post/guest" href="login26.html" class="btn btn-primary">Log in to post</a>
+
+			<span class="pull-right" component="category/controls">
+
+
+
+			</span>
+		</div>
+
+		<hr class="hidden-xs">
+
+		<p class="hidden-xs">Installation</p>
+
+		
+
+<ul component="category" class="topic-list" itemscope="" itemtype="http://www.schema.org/ItemList" data-nextstart="20" data-set="">
+	<meta itemprop="itemListOrder" content="descending">
+		<li component="category/topic" class="row clearfix unread" data-tid="2089" data-index="0" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="Using VS CODE with Laragon in portable mode... beware !">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="devansz">
+				
+
+								<a href="login46.html" class="pull-left">
+															<div class="user-icon" style="background-color: #1b5e20;">D</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="using-vs-code-with-laragon-in-portable-mode-beware.html" itemprop="url">Using VS CODE with Laragon in portable mode... beware !</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2020-06-25T04:53:33.233Z"></span> &bull; <a href="login46.html">devansz</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2020-06-25T04:53:33.233Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">2</span> <a href="11.html"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="2">2</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="1409">1409</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="login46.html">
+												<span title="devansz" class="user-icon user-img" style="background-color: #1b5e20;">D</span>
+					</a>
+					<a class="permalink" href="11.html">
+						<span class="timeago" title="2020-06-25T04:53:33.233Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>Hi !<br>
+When you install  VS Code with Laragon, the VS code portable mode is not activated.<br>
+To make VS Code portable, you have to create a &quot;data&quot; folder in your Laragon vs code folder :</p>
+<p>[YOUR LARAGON FOLDER]\bin\code\data</p>
+<p>if you find out after using vs code for a while, just move the files in :<br>
+C:\Users[YOUR USER NAME].vscode in that data folder.</p>
+<p>Regards,</p>
+<p>Dev</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2370" data-index="1" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="Laragon - Not a support format!">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="Tatiana">
+				
+
+								<a href="login58.html" class="pull-left">
+															<div class="user-icon" style="background-color: #009688;">T</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="laragon-not-a-support-format.html" itemprop="url">Laragon - Not a support format!</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-03-20T23:25:51.739Z"></span> &bull; <a href="login58.html">Tatiana</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-03-20T23:25:51.739Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">5</span> <a href="12.html"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="5">5</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="2219">2219</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="login58.html">
+												<span title="Tatiana" class="user-icon user-img" style="background-color: #009688;">T</span>
+					</a>
+					<a class="permalink" href="12.html">
+						<span class="timeago" title="2021-03-20T23:25:51.739Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>Hello,</p>
+<p>I'm reinstalling laragon on my new computer and I'm getting an error when creating the WordPress.</p>
+<p>I already did the replacement of the as this patch topic says but still the same error.</p>
+<p></p>
+<p>Help me please!</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2542" data-index="2" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="phpmyadmin install error">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="mehraneshghi">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #1b5e20;">M</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">phpmyadmin install error</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-08-31T18:23:40.402Z"></span> &bull; <a href="javascript:;">mehraneshghi</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-08-31T18:23:40.402Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">3</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="3">3</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="792">792</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="mehraneshghi" class="user-icon user-img" style="background-color: #1b5e20;">M</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-08-31T18:23:40.402Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>3 times I installed Laragon  and it gives the same error for phpmyadmin installation all three times for installation. what's the solution?</p>
+<p>Error:<br>
+No file:<br>
+...\20210831224410.phpmyadmin.phpmyadmin-4.8.5-...</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2549" data-index="3" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="What is &quot;%s&quot;">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="kleeh">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #673ab7;">K</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">What is &quot;%s&quot;</a><br>
+
+				
+
+								<span class="tag-list hidden-xs">
+										<a href="javascript:;"><span class="tag" style="">create laravel</span></a>
+					<a href="javascript:;"><span class="tag" style="">create project</span></a>
+					<small>&bull;</small>
+				</span>
+
+				<small class="hidden-xs"><span class="timeago" title="2021-09-02T20:00:41.224Z"></span> &bull; <a href="javascript:;">kleeh</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-09-02T20:00:41.224Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">1</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="1">1</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="309">309</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="kleeh" class="user-icon user-img" style="background-color: #673ab7;">K</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-09-02T20:00:41.224Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>What is the &quot;%s&quot; in the command &quot;create-project laravel/laravel %s' &quot;? . What does it do? Thanks.</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2541" data-index="4" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="create project without quick-app">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="Raffian-moin">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #607d8b;">R</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">create project without quick-app</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-08-31T13:24:14.756Z"></span> &bull; <a href="javascript:;">Raffian-moin</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-08-31T13:24:14.756Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">1</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="1">1</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="295">295</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="Raffian-moin" class="user-icon user-img" style="background-color: #607d8b;">R</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-08-31T13:24:14.756Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>I created an example-app laravel project  without <a href="javascript:;" rel="nofollow">quick-app.to</a> link this with laragon I created a .conf file in C:\laragon\etc\apache2\sites-enabled and did required things.when I visit example-app.local the project isn't <a href="javascript:;" rel="nofollow">opening.Am</a> I missing something?</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="541" data-index="5" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="How to install Laragon in Linux operating system?">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="sajjadkazemi10">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<img component="user/picture" data-uid="1376" src="https://www.gravatar.com/avatar/931a70df5b8609223473a44a2a6ebb16?size=192" class="user-img">
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">How to install Laragon in Linux operating system?</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2017-06-30T11:37:36.339Z"></span> &bull; <a href="javascript:;">sajjadkazemi10</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2017-06-30T11:37:36.339Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">10</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="10">10</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="49673">49673</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<img title="sajjadkazemi10" class="user-img" src="https://www.gravatar.com/avatar/931a70df5b8609223473a44a2a6ebb16?size=192">
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2017-06-30T11:37:36.339Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>How to install Laragon in Linux operating system?</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2485" data-index="6" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content=" Unsolved how to login ngrok accout ?">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="reyptr27">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #607d8b;">R</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url"><span class="unanswered"><i class="fa fa-question-circle"></i> Unsolved</span> how to login ngrok accout ?</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-06-28T18:52:46.771Z"></span> &bull; <a href="javascript:;">reyptr27</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-06-28T18:52:46.771Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">4</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="4">4</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="1170">1170</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="reyptr27" class="user-icon user-img" style="background-color: #607d8b;">R</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-06-28T18:52:46.771Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>how can i login to my ngrok account using auth token from laragon ?</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="1727" data-index="7" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="How I can Install specific Laravel version ??">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="tarikmanoar">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<img component="user/picture" data-uid="6355" src="https://www.gravatar.com/avatar/c0765a76921b98445a3a3814d63bb474?size=192" class="user-img">
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">How I can Install specific Laravel version ??</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2019-10-29T16:16:16.798Z"></span> &bull; <a href="javascript:;">tarikmanoar</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2019-10-29T16:16:16.798Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">7</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="7">7</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="6036">6036</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<img title="tarikmanoar" class="user-img" src="https://www.gravatar.com/avatar/c0765a76921b98445a3a3814d63bb474?size=192">
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2019-10-29T16:16:16.798Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>I want to install old version laravel in my machine!<br>
+What to do now???</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2467" data-index="8" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="Conexión a mySQL con HeidiSQL">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="paris888">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #ff5722;">P</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">Conexión a mySQL con HeidiSQL</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-06-10T14:48:39.461Z"></span> &bull; <a href="javascript:;">paris888</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-06-10T14:48:39.461Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">1</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="1">1</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="1021">1021</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="paris888" class="user-icon user-img" style="background-color: #ff5722;">P</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-06-10T14:48:39.461Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>Re: <a href="javascript:;">Connecting to MYSQL through HeidiSQL</a></p>
+<p>Hola yo tengo una duda, cuando inicio data base en laragon me aparece para iniciar sesion en el navegador y no la interfaz de HeidiSql, tengo que descargarla aparte? a mis compañeros no les pasa por eso mi duda.</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2464" data-index="9" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="How to configure phadmin to use python 3.8 from within laragon?">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="realtebo">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #009688;">R</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">How to configure phadmin to use python 3.8 from within laragon?</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-06-10T09:19:49.769Z"></span> &bull; <a href="javascript:;">realtebo</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-06-10T09:19:49.769Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">2</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="2">2</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="874">874</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="realtebo" class="user-icon user-img" style="background-color: #009688;">R</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-06-10T09:19:49.769Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>Problem</p>
+<p>Backup via pgadmin cannot work because it search for python38.dll</p>
+<p></p>
+<p>So I installed python into laragon into the path C:\laragon\bin\python\python-3.8.9-x64</p>
+<p></p>
+<p>The I opened the file C:\laragon\bin\postgresql\postgresql-13.2-1-windows-x64-binaries\pgAdmin 4\venv\pyvenv.cfg</p>
+<p>I entered this configs</p>
+home = C:\laragon\bin\python\python-3.8.9-x64
+implementation = CPython
+version_info = 3.8.3.final.0
+virtualenv = 20.0.20
+include-system-site-packages = false
+base-prefix = C:\laragon\bin\python\python-3.8.9-x64
+base-exec-prefix = C:\laragon\bin\python\python-3.8.9-x64
+base-executable = C:\laragon\bin\python\python-3.8.9-x64\python.exe
+
+<p>Restarted all (Laragon itself but also the pc)</p>
+<p>I still have the pythonw.exe error which cannot find python38.dll</p>
+<p>I tried with pgAdmin 4 configuration, without success</p>
+<p></p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2423" data-index="10" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="Passport change">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="VICTORBRITAIN">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #795548;">V</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">Passport change</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-05-17T13:44:09.265Z"></span> &bull; <a href="javascript:;">VICTORBRITAIN</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-05-17T13:44:09.265Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">1</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="1">1</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="672">672</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="VICTORBRITAIN" class="user-icon user-img" style="background-color: #795548;">V</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-05-17T13:44:09.265Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>Hi there<br>
+I have changed password in my e-mail account but Laragon keeps using my old password. I have gone into word but I cannot see how to change it.<br>
+The password box entry ignores new password Help!!!!!!</p>
+<p>Regards<br>
+Andrew</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2342" data-index="11" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="Configure php version in httpd-vhosts.conf (Virtual Host)">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="arcanisgk">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #827717;">A</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">Configure php version in httpd-vhosts.conf (Virtual Host)</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-03-01T15:54:19.198Z"></span> &bull; <a href="javascript:;">arcanisgk</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-03-01T15:54:19.198Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">3</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="3">3</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="2902">2902</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="arcanisgk" class="user-icon user-img" style="background-color: #827717;">A</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-03-01T15:54:19.198Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>hi, is there any way to configure laragon so that by configuring virtual hosts; can run more than one version of php at the same time, for example:</p>
+<p><a href="javascript:;" rel="nofollow">vhost1.me</a> == 5.6.1<br>
+<a href="javascript:;" rel="nofollow">vhost2.me</a> == 7.2<br>
+<a href="javascript:;" rel="nofollow">vhost3.me</a> == 7.4<br>
+<a href="javascript:;" rel="nofollow">vhost4.me</a> == 8.2</p>
+<p>ignoring the option that can be changed with a click. I need to see the same development with two versions of php running at the same time since; In 5.6.1 I have an api and in 7.2 and 7.4 a development that consumes it and I am migrating these last two to 8.0</p>
+<p>I have seen file settings httpd-vhosts.conf:</p>
+<p>&lt;Directory &quot;C:\laragon\my_old_project1&quot;&gt;<br>
+&lt;FilesMatch &quot;.php$&quot;&gt;<br>
+SetHandler application/x-httpd-php56-cgi<br>
+&lt;/FilesMatch&gt;<br>
+&lt;/Directory&gt;</p>
+<p>&lt;Directory &quot;C:\laragon\my_old_project2&quot;&gt;<br>
+&lt;FilesMatch &quot;.php$&quot;&gt;<br>
+SetHandler application/x-httpd-php56-cgi<br>
+&lt;/FilesMatch&gt;<br>
+&lt;/Directory&gt;</p>
+<p>but I can't get it to work ... mainly this I can't find:</p>
+<p>SetEnv PHPRC &quot;\path\to\xampp\php&quot;</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2386" data-index="12" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="Update Laravel &quot;Project&quot; from 5.8 to 8?">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="Gasbygh">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #827717;">G</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">Update Laravel &quot;Project&quot; from 5.8 to 8?</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-04-02T16:01:46.290Z"></span> &bull; <a href="javascript:;">Gasbygh</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-04-02T16:01:46.290Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">2</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="2">2</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="1420">1420</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="Gasbygh" class="user-icon user-img" style="background-color: #827717;">G</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-04-02T16:01:46.290Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>Re: <a href="javascript:;">install Laravel 6.0</a></p>
+<p>Is it possible to update an &quot;existing Laravel Project&quot; from a lower version to a newer version using Laragon?</p>
+<p>Please share your ideas on that. Thanks</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2359" data-index="13" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="Mysql failed to start after upgrading to MySQL 8.0.23">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="AbidFaiz">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #009688;">A</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">Mysql failed to start after upgrading to MySQL 8.0.23</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-03-12T17:35:53.845Z"></span> &bull; <a href="javascript:;">AbidFaiz</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-03-12T17:35:53.845Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">2</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="2">2</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="1358">1358</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="AbidFaiz" class="user-icon user-img" style="background-color: #009688;">A</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-03-12T17:35:53.845Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>Mysql failed to start after upgrading to MySQL 8.0.23![alt text](image url)</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2353" data-index="14" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="integrating wordpress with memcached or redis">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="Samanw">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #607d8b;">S</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">integrating wordpress with memcached or redis</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-03-07T17:50:37.444Z"></span> &bull; <a href="javascript:;">Samanw</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-03-07T17:50:37.444Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">1</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="1">1</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="783">783</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="Samanw" class="user-icon user-img" style="background-color: #607d8b;">S</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-03-07T17:50:37.444Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>hey im trying to test out memcached or redis in laragon but Wordpress cannot detect any of these are running<br>
+I've even thou services are started and I have access to their admin page<br>
+any idea?</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2339" data-index="15" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="Is it possible to copy an existing php directory to laragon&#x2F;bin&#x2F;php to get an extra php version?">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="mgomez-tubs">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #795548;">M</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">Is it possible to copy an existing php directory to laragon&#x2F;bin&#x2F;php to get an extra php version?</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-02-26T00:08:57.135Z"></span> &bull; <a href="javascript:;">mgomez-tubs</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-02-26T00:08:57.135Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">5</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="5">5</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="2094">2094</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="mgomez-tubs" class="user-icon user-img" style="background-color: #795548;">M</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-02-26T00:08:57.135Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>I assumed it would work, and it does except when the php.ini file gets misteriously removed after pressing Start All.... is there something I can do to prevent that? If i replace the php.ini after &quot;Star All&quot; it will does work fine.</p>
+<p>BTW Im using the portable Laragon installation</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="815" data-index="16" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content=" Solved Mongodb Addon for Laragon">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="balaji00710">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #2196f3;">B</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url"><span class="answered"><i class="fa fa-question-circle"></i> Solved</span> Mongodb Addon for Laragon</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2018-01-17T05:46:02.524Z"></span> &bull; <a href="javascript:;">balaji00710</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2018-01-17T05:46:02.524Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">11</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="11">11</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="20773">20773</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="balaji00710" class="user-icon user-img" style="background-color: #2196f3;">B</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2018-01-17T05:46:02.524Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>Am using the laragon php stack...But i need to use Mongodb along with this stack...So is there any addon available for this stack</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="2321" data-index="17" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="upgrade to laravel 8...">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="Alidad">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #e91e63;">A</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">upgrade to laravel 8...</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2021-02-09T03:19:13.586Z"></span> &bull; <a href="javascript:;">Alidad</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2021-02-09T03:19:13.586Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">2</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="2">2</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="2158">2158</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="Alidad" class="user-icon user-img" style="background-color: #e91e63;">A</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2021-02-09T03:19:13.586Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>hi, does anyone tell me how can I upgrade the latest version of laravel 8, currently my laragon showing using laravel 7.2?<br>
+many thanks.<br>
+AM</p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix unread" data-tid="973" data-index="18" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="laragon updating to MySQL 8 not working">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="Bsienn Khan">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #673ab7;">B</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<a href="javascript:;" itemprop="url">laragon updating to MySQL 8 not working</a><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2018-05-30T12:55:15.029Z"></span> &bull; <a href="javascript:;">Bsienn Khan</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2018-05-30T12:55:15.029Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">11</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="11">11</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="14203">14203</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+												<p>
+					<a href="javascript:;">
+												<span title="Bsienn Khan" class="user-icon user-img" style="background-color: #673ab7;">B</span>
+					</a>
+					<a class="permalink" href="javascript:;">
+						<span class="timeago" title="2018-05-30T12:55:15.029Z"></span>
+					</a>
+				</p>
+				<div class="post-content">
+					<p>I Installed Laragon 3.2.3 (Also tried with 3.1 as well)<br>
+I updated to latest mysql 8 from the following link in pic</p>
+<p></p>
+<p>But I get error after switching to new mysql and starting it.</p>
+<p><a href="javascript:;">0_1527594583748_mysqllog.txt</a></p>
+
+				</div>
+			</div>
+		</div>
+	</li>
+	<li component="category/topic" class="row clearfix deleted unread" data-tid="2274" data-index="19" data-cid="7" itemprop="itemListElement">
+		<meta itemprop="name" content="This topic is deleted!">
+
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="furiousjayed">
+				
+
+								<a href="javascript:;" class="pull-left">
+															<div class="user-icon" style="background-color: #3f51b5;">F</div>
+				</a>
+
+			</div>
+
+			<h2 component="topic/header" class="title">
+				<i component="topic/pinned" class="fa fa-thumb-tack hide" title="Pinned"></i>
+				<i component="topic/locked" class="fa fa-lock hide" title="Locked"></i>
+				<i component="topic/moved" class="fa fa-arrow-circle-right hide" title="Moved"></i>
+				
+
+								<span>This topic is deleted!</span><br>
+
+				
+
+				
+
+				<small class="hidden-xs"><span class="timeago" title="2020-12-22T04:34:06.013Z"></span> &bull; <a href="javascript:;">furiousjayed</a></small>
+				<small class="visible-xs-inline">
+										<span class="timeago" title="2020-12-22T04:34:06.013Z"></span>
+				</small>
+			</h2>
+		</div>
+
+		<div class="mobile-stat col-xs-2 visible-xs text-right">
+			<span class="human-readable-number">1</span> <a href="javascript:;"><i class="fa fa-arrow-circle-right"></i></a>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="1">1</span><br>
+			<small>Posts</small>
+		</div>
+
+		<div class="col-md-1 hidden-sm hidden-xs stats">
+			<span class="human-readable-number" title="2">2</span><br>
+			<small>Views</small>
+		</div>
+
+		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+			<div class="card" style="border-color: #A16946">
+								
+			</div>
+		</div>
+	</li>
+</ul>
+
+
+		<div component="pagination" class="text-center pagination-container">
+	<ul class="pagination hidden-xs">
+		<li class="previous pull-left disabled">
+			<a href="javascript:;" data-page="1"><i class="fa fa-chevron-left"></i> </a>
+		</li>
+
+								<li class="page active">
+				<a href="javascript:;" data-page="1">1</a>
+			</li>
+						<li class="page">
+				<a href="javascript:;" data-page="2">2</a>
+			</li>
+						<li class="page">
+				<a href="javascript:;" data-page="3">3</a>
+			</li>
+						<li class="page">
+				<a href="javascript:;" data-page="4">4</a>
+			</li>
+						<li class="page">
+				<a href="javascript:;" data-page="5">5</a>
+			</li>
+
+		<li class="next pull-right">
+			<a href="javascript:;" data-page="2"> <i class="fa fa-chevron-right"></i></a>
+		</li>
+	</ul>
+
+	<ul class="pagination hidden-sm hidden-md hidden-lg">
+		<li class="first disabled">
+			<a href="javascript:;" data-page="1"><i class="fa fa-fast-backward"></i> </a>
+		</li>
+		
+		<li class="previous disabled">
+			<a href="javascript:;" data-page="1"><i class="fa fa-chevron-left"></i> </a>
+		</li>
+
+		<li component="pagination/select-page" class="page select-page">
+			<a href="#">1 / 5</a>
+		</li>
+		
+		<li class="next">
+			<a href="javascript:;" data-page="2"> <i class="fa fa-chevron-right"></i></a>
+		</li>
+		
+		<li class="last">
+			<a href="javascript:;" data-page="5"><i class="fa fa-fast-forward"></i> </a>
+		</li>
+	</ul>
+</div>
+	</div>
+	<div widget-area="sidebar" class="col-lg-3 col-sm-12 hidden"></div>
+</div>
+<div widget-area="footer"></div>
+
+<div id="move_thread_modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="Move Topic" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3>Move Topic</h3>
+			</div>
+			<div class="modal-body">
+<ul class="category-list">
+</ul>
+
+				<p>
+					Disabled Categories are greyed out
+				</p>
+				<div id="move-confirm" class="hide">
+					<hr>
+					<div class="alert alert-info">This topic will be moved to the category <strong><span id="confirm-category-name"></span></strong></div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal" id="move_thread_cancel">Close</button>
+				<button type="button" class="btn btn-primary" id="move_thread_commit" disabled="">Move</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		</div><!-- END container -->
+	</main>
+
+	<div class="hide">
+<script type="text/tpl" data-template="500">
+&#x3C;div class=&#x22;alert alert-danger&#x22;&#x3E;
+&#x9;&#x3C;strong&#x3E;Internal Error.&#x3C;/strong&#x3E;
+&#x9;&#x3C;p&#x3E;Oops! Looks like something went wrong!&#x3C;/p&#x3E;
+&#x9;&#x3C;p&#x3E;&#x3C;/p&#x3E;
+&#x9;&#x3C;!-- IF error --&#x3E;&#x3C;p&#x3E;&#x3C;/p&#x3E;&#x3C;!-- ENDIF error --&#x3E;
+&#x3C;/div&#x3E;
+</script>
+	</div>
+
+	<div class="topic-search hidden">
+		<div class="btn-group">
+			<button type="button" class="btn btn-default count"></button>
+			<button type="button" class="btn btn-default prev"><i class="fa fa-fw fa-angle-up"></i></button>
+			<button type="button" class="btn btn-default next"><i class="fa fa-fw fa-angle-down"></i></button>
+		</div>
+	</div>
+
+	<div component="toaster/tray" class="alert-window">
+		<div id="reconnect-alert" class="alert alert-dismissable alert-warning clearfix hide" component="toaster/toast">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<p>Looks like your connection to Laragon was lost, please wait while we try to reconnect.</p>
+		</div>
+	</div>
+
+	<script>
+		require(['forum/footer']);
+	</script>
+</body>
+</html>
+<script id="ajaxify-data" type="application/json">{"cid":"7","name":"Installation","description":"","icon":"fa-comments","bgColor":"#A16946","color":"#fff","slug":"7/installation","parentCid":"6","topic_count":"93","post_count":"354","disabled":false,"order":"7","link":"","numRecentReplies":"1","class":"col-md-3 col-xs-6","imageClass":"cover","totalPostCount":354,"totalTopicCount":93,"unread-class":"unread","children":[],"parent":{"cid":"6","name":"Documents","description":"Detail information for Laragon","icon":"fa-comments","bgColor":"#7CAFC2","color":"#fff","slug":"6/documents","parentCid":"0","topic_count":"13","post_count":"48","disabled":false,"order":"8","link":"","numRecentReplies":"1","class":"col-md-3 col-xs-6","imageClass":"cover","descriptionParsed":"<p>Detail information for Laragon<\/p>\n","totalPostCount":"48","totalTopicCount":"13"},"topics":[{"tid":"2089","uid":"5122","cid":"7","mainPid":"8638","title":"Using VS CODE with Laragon in portable mode... beware !","slug":"2089/using-vs-code-with-laragon-in-portable-mode-beware","timestamp":"1593060813233","lastposttime":"1633456193065","postcount":"2","viewcount":"1409","locked":false,"deleted":false,"pinned":false,"teaserPid":"10222","titleRaw":"Using VS CODE with Laragon in portable mode... beware !","timestampISO":"2020-06-25T04:53:33.233Z","lastposttimeISO":"2021-10-05T17:49:53.065Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"5122","username":"devansz","fullname":"","userslug":"devansz","reputation":"1","postcount":"1","picture":"","signature":"","banned":"0","status":"offline","icon:text":"D","icon:bgColor":"#1b5e20"},"teaser":{"pid":"8638","uid":"5122","timestamp":"1593060813233","tid":"2089","content":"<p>Hi !<br />\nWhen you install  VS Code with Laragon, the VS code portable mode is not activated.<br />\nTo make VS Code portable, you have to create a &quot;data&quot; folder in your Laragon vs code folder :<\/p>\n<p>[YOUR LARAGON FOLDER]\\bin\\code\\data<\/p>\n<p>if you find out after using vs code for a while, just move the files in :<br />\nC:\\Users[YOUR USER NAME].vscode in that data folder.<\/p>\n<p>Regards,<\/p>\n<p>Dev<\/p>\n","user":{"uid":"5122","username":"devansz","userslug":"devansz","picture":"","icon:text":"D","icon:bgColor":"#1b5e20"},"timestampISO":"2020-06-25T04:53:33.233Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":0},{"tid":"2370","uid":"4425","cid":"7","mainPid":"9535","title":"Laragon - Not a support format!","slug":"2370/laragon-not-a-support-format","timestamp":"1616282751739","lastposttime":"1632770289635","postcount":"5","viewcount":"2219","locked":false,"deleted":false,"pinned":false,"teaserPid":"10205","titleRaw":"Laragon - Not a support format!","timestampISO":"2021-03-20T23:25:51.739Z","lastposttimeISO":"2021-09-27T19:18:09.635Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"4425","username":"Tatiana","fullname":"","userslug":"tatiana","reputation":"1","postcount":"12","picture":"","signature":"","banned":"0","status":"offline","icon:text":"T","icon:bgColor":"#009688"},"teaser":{"pid":"9535","uid":"4425","timestamp":"1616282751739","tid":"2370","content":"<p>Hello,<\/p>\n<p>I'm reinstalling laragon on my new computer and I'm getting an error when creating the WordPress.<\/p>\n<p>I already did the replacement of the as this patch topic says but still the same error.<\/p>\n<p><\/p>\n<p>Help me please!<\/p>\n","user":{"uid":"4425","username":"Tatiana","userslug":"tatiana","picture":"","icon:text":"T","icon:bgColor":"#009688"},"timestampISO":"2021-03-20T23:25:51.739Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":1},{"tid":"2542","uid":"10312","cid":"7","mainPid":"10130","title":"phpmyadmin install error","slug":"2542/phpmyadmin-install-error","timestamp":"1630434220402","lastposttime":"1630767367460","postcount":"3","viewcount":"792","locked":false,"deleted":false,"pinned":false,"teaserPid":"10143","titleRaw":"phpmyadmin install error","timestampISO":"2021-08-31T18:23:40.402Z","lastposttimeISO":"2021-09-04T14:56:07.460Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"10312","username":"mehraneshghi","fullname":"","userslug":"mehraneshghi","reputation":"0","postcount":"3","picture":"","signature":"","banned":"0","status":"offline","icon:text":"M","icon:bgColor":"#1b5e20"},"teaser":{"pid":"10130","uid":"10312","timestamp":"1630434220402","tid":"2542","content":"<p>3 times I installed Laragon  and it gives the same error for phpmyadmin installation all three times for installation. what's the solution?<\/p>\n<p>Error:<br />\nNo file:<br />\n...\\20210831224410.phpmyadmin.phpmyadmin-4.8.5-...<\/p>\n","user":{"uid":"10312","username":"mehraneshghi","userslug":"mehraneshghi","picture":"","icon:text":"M","icon:bgColor":"#1b5e20"},"timestampISO":"2021-08-31T18:23:40.402Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":2},{"tid":"2549","uid":"6149","cid":"7","mainPid":"10140","title":"What is &quot;%s&quot;","slug":"2549/what-is-s","timestamp":"1630612841224","lastposttime":"1630612841224","postcount":"1","viewcount":"309","locked":false,"deleted":false,"pinned":false,"titleRaw":"What is \"%s\"","timestampISO":"2021-09-02T20:00:41.224Z","lastposttimeISO":"2021-09-02T20:00:41.224Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"6149","username":"kleeh","fullname":"","userslug":"kleeh","reputation":"0","postcount":"5","picture":"","signature":"","banned":"0","status":"offline","icon:text":"K","icon:bgColor":"#673ab7"},"teaser":{"pid":"10140","uid":"6149","timestamp":"1630612841224","tid":"2549","content":"<p>What is the &quot;%s&quot; in the command &quot;create-project laravel/laravel %s' &quot;? . What does it do? Thanks.<\/p>\n","user":{"uid":"6149","username":"kleeh","userslug":"kleeh","picture":"","icon:text":"K","icon:bgColor":"#673ab7"},"timestampISO":"2021-09-02T20:00:41.224Z","index":1},"tags":[{"value":"create laravel","color":"","bgColor":"","score":"1"},{"value":"create project","color":"","bgColor":"","score":"1"}],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":3},{"tid":"2541","uid":"10313","cid":"7","mainPid":"10128","title":"create project without quick-app","slug":"2541/create-project-without-quick-app","timestamp":"1630416254756","lastposttime":"1630416254756","postcount":"1","viewcount":"295","locked":false,"deleted":false,"pinned":false,"titleRaw":"create project without quick-app","timestampISO":"2021-08-31T13:24:14.756Z","lastposttimeISO":"2021-08-31T13:24:14.756Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"10313","username":"Raffian-moin","fullname":"","userslug":"raffian-moin","reputation":"0","postcount":"1","picture":"","signature":"","banned":"0","status":"offline","icon:text":"R","icon:bgColor":"#607d8b"},"teaser":{"pid":"10128","uid":"10313","timestamp":"1630416254756","tid":"2541","content":"<p>I created an example-app laravel project  without <a href=\"http://quick-app.to\" rel=\"nofollow\">quick-app.to<\/a> link this with laragon I created a .conf file in C:\\laragon\\etc\\apache2\\sites-enabled and did required things.when I visit example-app.local the project isn't <a href=\"http://opening.Am\" rel=\"nofollow\">opening.Am<\/a> I missing something?<\/p>\n","user":{"uid":"10313","username":"Raffian-moin","userslug":"raffian-moin","picture":"","icon:text":"R","icon:bgColor":"#607d8b"},"timestampISO":"2021-08-31T13:24:14.756Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":4},{"tid":"541","uid":"1376","cid":"7","mainPid":"2450","title":"How to install Laragon in Linux operating system?","slug":"541/how-to-install-laragon-in-linux-operating-system","timestamp":"1498822656339","lastposttime":"1626578994783","postcount":"10","viewcount":"49673","locked":false,"deleted":false,"pinned":false,"teaserPid":"9969","titleRaw":"How to install Laragon in Linux operating system?","timestampISO":"2017-06-30T11:37:36.339Z","lastposttimeISO":"2021-07-18T03:29:54.783Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"1376","username":"sajjadkazemi10","fullname":"sajjad kazemi","userslug":"sajjadkazemi10","reputation":"1","postcount":"56","picture":"https://www.gravatar.com/avatar/931a70df5b8609223473a44a2a6ebb16?size=192","signature":"","banned":"0","status":"offline","icon:text":"S","icon:bgColor":"#e91e63"},"teaser":{"pid":"2450","uid":"1376","timestamp":"1498822656339","tid":"541","content":"<p>How to install Laragon in Linux operating system?<\/p>\n","user":{"uid":"1376","username":"sajjadkazemi10","userslug":"sajjadkazemi10","picture":"https://www.gravatar.com/avatar/931a70df5b8609223473a44a2a6ebb16?size=192","icon:text":"S","icon:bgColor":"#e91e63"},"timestampISO":"2017-06-30T11:37:36.339Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":5},{"tid":"2485","uid":"10013","cid":"7","mainPid":"9910","title":"<span class=\"unanswered\"><i class=\"fa fa-question-circle\"><\/i> Unsolved<\/span> how to login ngrok accout ?","slug":"2485/how-to-login-ngrok-accout","timestamp":"1624906366771","lastposttime":"1624926904106","postcount":"4","viewcount":"1170","locked":false,"deleted":false,"pinned":false,"teaserPid":"9914","isQuestion":"1","isSolved":"0","titleRaw":"how to login ngrok accout ?","timestampISO":"2021-06-28T18:52:46.771Z","lastposttimeISO":"2021-06-29T00:35:04.106Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"10013","username":"reyptr27","fullname":"Reynaldo Putra","userslug":"reyptr27","reputation":"0","postcount":"3","picture":"","signature":"","banned":"0","status":"offline","icon:text":"R","icon:bgColor":"#607d8b"},"teaser":{"pid":"9910","uid":"10013","timestamp":"1624906366771","tid":"2485","content":"<p>how can i login to my ngrok account using auth token from laragon ?<\/p>\n","user":{"uid":"10013","username":"reyptr27","userslug":"reyptr27","picture":"","icon:text":"R","icon:bgColor":"#607d8b"},"timestampISO":"2021-06-28T18:52:46.771Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":6},{"tid":"1727","uid":"6355","cid":"7","mainPid":"7464","title":"How I can Install specific Laravel version ??","slug":"1727/how-i-can-install-specific-laravel-version","timestamp":"1572365776798","lastposttime":"1624352629498","postcount":"7","viewcount":"6036","locked":false,"deleted":false,"pinned":false,"teaserPid":"9887","titleRaw":"How I can Install specific Laravel version ??","timestampISO":"2019-10-29T16:16:16.798Z","lastposttimeISO":"2021-06-22T09:03:49.498Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"6355","username":"tarikmanoar","fullname":"Tarik Manoar","userslug":"tarikmanoar","reputation":"0","postcount":"8","picture":"https://www.gravatar.com/avatar/c0765a76921b98445a3a3814d63bb474?size=192","signature":"Manoar from the Future!","banned":"0","status":"offline","icon:text":"T","icon:bgColor":"#e91e63"},"teaser":{"pid":"7464","uid":"6355","timestamp":"1572365776798","tid":"1727","content":"<p>I want to install old version laravel in my machine!<br />\nWhat to do now???<\/p>\n","user":{"uid":"6355","username":"tarikmanoar","userslug":"tarikmanoar","picture":"https://www.gravatar.com/avatar/c0765a76921b98445a3a3814d63bb474?size=192","icon:text":"T","icon:bgColor":"#e91e63"},"timestampISO":"2019-10-29T16:16:16.798Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":7},{"tid":"2467","uid":"9931","cid":"7","mainPid":"9824","title":"Conexión a mySQL con HeidiSQL","slug":"2467/conexión-a-mysql-con-heidisql","timestamp":"1623336519461","lastposttime":"1623336519461","postcount":"1","viewcount":"1021","locked":false,"deleted":false,"pinned":false,"titleRaw":"Conexión a mySQL con HeidiSQL","timestampISO":"2021-06-10T14:48:39.461Z","lastposttimeISO":"2021-06-10T14:48:39.461Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"9931","username":"paris888","fullname":"","userslug":"paris888","reputation":"0","postcount":"1","picture":"","signature":"","banned":"0","status":"offline","icon:text":"P","icon:bgColor":"#ff5722"},"teaser":{"pid":"9824","uid":"9931","timestamp":"1623336519461","tid":"2467","content":"<p>Re: <a href=\"/topic/230/connecting-to-mysql-through-heidisql\">Connecting to MYSQL through HeidiSQL<\/a><\/p>\n<p>Hola yo tengo una duda, cuando inicio data base en laragon me aparece para iniciar sesion en el navegador y no la interfaz de HeidiSql, tengo que descargarla aparte? a mis compañeros no les pasa por eso mi duda.<\/p>\n","user":{"uid":"9931","username":"paris888","userslug":"paris888","picture":"","icon:text":"P","icon:bgColor":"#ff5722"},"timestampISO":"2021-06-10T14:48:39.461Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":8},{"mainPid":"9817","lastposttime":"1623318757141","title":"How to configure phadmin to use python 3.8 from within laragon?","pinned":false,"cid":"7","timestamp":"1623316789769","deleted":false,"slug":"2464/how-to-configure-phadmin-to-use-python-3-8-from-within-laragon","teaserPid":"9818","locked":false,"tid":"2464","uid":"9299","viewcount":"874","postcount":"2","thumb":"","titleRaw":"How to configure phadmin to use python 3.8 from within laragon?","timestampISO":"2021-06-10T09:19:49.769Z","lastposttimeISO":"2021-06-10T09:52:37.141Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"9299","username":"realtebo","fullname":"","userslug":"realtebo","reputation":"0","postcount":"14","picture":"","signature":"","banned":"0","status":"offline","icon:text":"R","icon:bgColor":"#009688"},"teaser":{"pid":"9817","uid":"9299","timestamp":"1623316789769","tid":"2464","content":"<p>Problem<\/p>\n<p>Backup via pgadmin cannot work because it search for python38.dll<\/p>\n<p><\/p>\n<p>So I installed python into laragon into the path C:\\laragon\\bin\\python\\python-3.8.9-x64<\/p>\n<p><\/p>\n<p>The I opened the file C:\\laragon\\bin\\postgresql\\postgresql-13.2-1-windows-x64-binaries\\pgAdmin 4\\venv\\pyvenv.cfg<\/p>\n<p>I entered this configs<\/p>\nhome = C:\\laragon\\bin\\python\\python-3.8.9-x64\nimplementation = CPython\nversion_info = 3.8.3.final.0\nvirtualenv = 20.0.20\ninclude-system-site-packages = false\nbase-prefix = C:\\laragon\\bin\\python\\python-3.8.9-x64\nbase-exec-prefix = C:\\laragon\\bin\\python\\python-3.8.9-x64\nbase-executable = C:\\laragon\\bin\\python\\python-3.8.9-x64\\python.exe\n\n<p>Restarted all (Laragon itself but also the pc)<\/p>\n<p>I still have the pythonw.exe error which cannot find python38.dll<\/p>\n<p>I tried with pgAdmin 4 configuration, without success<\/p>\n<p><\/p>\n","user":{"uid":"9299","username":"realtebo","userslug":"realtebo","picture":"","icon:text":"R","icon:bgColor":"#009688"},"timestampISO":"2021-06-10T09:19:49.769Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":9},{"tid":"2423","uid":"9809","cid":"7","mainPid":"9711","title":"Passport change","slug":"2423/passport-change","timestamp":"1621259049265","lastposttime":"1621259049265","postcount":"1","viewcount":"672","locked":false,"deleted":false,"pinned":false,"titleRaw":"Passport change","timestampISO":"2021-05-17T13:44:09.265Z","lastposttimeISO":"2021-05-17T13:44:09.265Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"9809","username":"VICTORBRITAIN","fullname":"","userslug":"victorbritain","reputation":"0","postcount":"1","picture":"","signature":"","banned":"0","status":"offline","icon:text":"V","icon:bgColor":"#795548"},"teaser":{"pid":"9711","uid":"9809","timestamp":"1621259049265","tid":"2423","content":"<p>Hi there<br />\nI have changed password in my e-mail account but Laragon keeps using my old password. I have gone into word but I cannot see how to change it.<br />\nThe password box entry ignores new password Help!!!!!!<\/p>\n<p>Regards<br />\nAndrew<\/p>\n","user":{"uid":"9809","username":"VICTORBRITAIN","userslug":"victorbritain","picture":"","icon:text":"V","icon:bgColor":"#795548"},"timestampISO":"2021-05-17T13:44:09.265Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":10},{"tid":"2342","uid":"9392","cid":"7","mainPid":"9456","title":"Configure php version in httpd-vhosts.conf (Virtual Host)","slug":"2342/configure-php-version-in-httpd-vhosts-conf-virtual-host","timestamp":"1614614059198","lastposttime":"1617470449445","postcount":"3","viewcount":"2902","locked":false,"deleted":false,"pinned":false,"teaserPid":"9598","titleRaw":"Configure php version in httpd-vhosts.conf (Virtual Host)","timestampISO":"2021-03-01T15:54:19.198Z","lastposttimeISO":"2021-04-03T17:20:49.445Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"9392","username":"arcanisgk","fullname":"","userslug":"arcanisgk","reputation":"0","postcount":"5","picture":"","signature":"","banned":"0","status":"offline","icon:text":"A","icon:bgColor":"#827717"},"teaser":{"pid":"9456","uid":"9392","timestamp":"1614614059198","tid":"2342","content":"<p>hi, is there any way to configure laragon so that by configuring virtual hosts; can run more than one version of php at the same time, for example:<\/p>\n<p><a href=\"http://vhost1.me\" rel=\"nofollow\">vhost1.me<\/a> == 5.6.1<br />\n<a href=\"http://vhost2.me\" rel=\"nofollow\">vhost2.me<\/a> == 7.2<br />\n<a href=\"http://vhost3.me\" rel=\"nofollow\">vhost3.me<\/a> == 7.4<br />\n<a href=\"http://vhost4.me\" rel=\"nofollow\">vhost4.me<\/a> == 8.2<\/p>\n<p>ignoring the option that can be changed with a click. I need to see the same development with two versions of php running at the same time since; In 5.6.1 I have an api and in 7.2 and 7.4 a development that consumes it and I am migrating these last two to 8.0<\/p>\n<p>I have seen file settings httpd-vhosts.conf:<\/p>\n<p>&lt;Directory &quot;C:\\laragon\\my_old_project1&quot;&gt;<br />\n&lt;FilesMatch &quot;.php$&quot;&gt;<br />\nSetHandler application/x-httpd-php56-cgi<br />\n&lt;/FilesMatch&gt;<br />\n&lt;/Directory&gt;<\/p>\n<p>&lt;Directory &quot;C:\\laragon\\my_old_project2&quot;&gt;<br />\n&lt;FilesMatch &quot;.php$&quot;&gt;<br />\nSetHandler application/x-httpd-php56-cgi<br />\n&lt;/FilesMatch&gt;<br />\n&lt;/Directory&gt;<\/p>\n<p>but I can't get it to work ... mainly this I can't find:<\/p>\n<p>SetEnv PHPRC &quot;\\path\\to\\xampp\\php&quot;<\/p>\n","user":{"uid":"9392","username":"arcanisgk","userslug":"arcanisgk","picture":"","icon:text":"A","icon:bgColor":"#827717"},"timestampISO":"2021-03-01T15:54:19.198Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":11},{"tid":"2386","uid":"3817","cid":"7","mainPid":"9594","title":"Update Laravel &quot;Project&quot; from 5.8 to 8?","slug":"2386/update-laravel-project-from-5-8-to-8","timestamp":"1617379306290","lastposttime":"1617448829475","postcount":"2","viewcount":"1420","locked":false,"deleted":false,"pinned":false,"teaserPid":"9597","titleRaw":"Update Laravel \"Project\" from 5.8 to 8?","timestampISO":"2021-04-02T16:01:46.290Z","lastposttimeISO":"2021-04-03T11:20:29.475Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"3817","username":"Gasbygh","fullname":"","userslug":"gasbygh","reputation":"0","postcount":"1","picture":"","signature":"","banned":"0","status":"offline","icon:text":"G","icon:bgColor":"#827717"},"teaser":{"pid":"9594","uid":"3817","timestamp":"1617379306290","tid":"2386","content":"<p>Re: <a href=\"/topic/1641/install-laravel-6-0\">install Laravel 6.0<\/a><\/p>\n<p>Is it possible to update an &quot;existing Laravel Project&quot; from a lower version to a newer version using Laragon?<\/p>\n<p>Please share your ideas on that. Thanks<\/p>\n","user":{"uid":"3817","username":"Gasbygh","userslug":"gasbygh","picture":"","icon:text":"G","icon:bgColor":"#827717"},"timestampISO":"2021-04-02T16:01:46.290Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":12},{"tid":"2359","uid":"9469","cid":"7","mainPid":"9507","title":"Mysql failed to start after upgrading to MySQL 8.0.23","slug":"2359/mysql-failed-to-start-after-upgrading-to-mysql-8-0-23","timestamp":"1615570553845","lastposttime":"1615780480156","postcount":"2","viewcount":"1358","locked":false,"deleted":false,"pinned":false,"teaserPid":"9513","titleRaw":"Mysql failed to start after upgrading to MySQL 8.0.23","timestampISO":"2021-03-12T17:35:53.845Z","lastposttimeISO":"2021-03-15T03:54:40.156Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"9469","username":"AbidFaiz","fullname":"","userslug":"abidfaiz","reputation":"0","postcount":"2","picture":"","signature":"","banned":"0","status":"offline","icon:text":"A","icon:bgColor":"#009688"},"teaser":{"pid":"9507","uid":"9469","timestamp":"1615570553845","tid":"2359","content":"<p>Mysql failed to start after upgrading to MySQL 8.0.23![alt text](image url)<\/p>\n","user":{"uid":"9469","username":"AbidFaiz","userslug":"abidfaiz","picture":"","icon:text":"A","icon:bgColor":"#009688"},"timestampISO":"2021-03-12T17:35:53.845Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":13},{"tid":"2353","uid":"9436","cid":"7","mainPid":"9490","title":"integrating wordpress with memcached or redis","slug":"2353/integrating-wordpress-with-memcached-or-redis","timestamp":"1615139437444","lastposttime":"1615139437444","postcount":"1","viewcount":"783","locked":false,"deleted":false,"pinned":false,"titleRaw":"integrating wordpress with memcached or redis","timestampISO":"2021-03-07T17:50:37.444Z","lastposttimeISO":"2021-03-07T17:50:37.444Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"9436","username":"Samanw","fullname":"","userslug":"samanw","reputation":"0","postcount":"1","picture":"","signature":"","banned":"0","status":"offline","icon:text":"S","icon:bgColor":"#607d8b"},"teaser":{"pid":"9490","uid":"9436","timestamp":"1615139437444","tid":"2353","content":"<p>hey im trying to test out memcached or redis in laragon but Wordpress cannot detect any of these are running<br />\nI've even thou services are started and I have access to their admin page<br />\nany idea?<\/p>\n","user":{"uid":"9436","username":"Samanw","userslug":"samanw","picture":"","icon:text":"S","icon:bgColor":"#607d8b"},"timestampISO":"2021-03-07T17:50:37.444Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":14},{"mainPid":"9445","lastposttime":"1614890406975","title":"Is it possible to copy an existing php directory to laragon&#x2F;bin&#x2F;php to get an extra php version?","pinned":false,"cid":"7","timestamp":"1614298137135","deleted":false,"slug":"2339/is-it-possible-to-copy-an-existing-php-directory-to-laragon-bin-php-to-get-an-extra-php-version","teaserPid":"9480","locked":false,"tid":"2339","uid":"9374","viewcount":"2094","postcount":"5","thumb":"","titleRaw":"Is it possible to copy an existing php directory to laragon/bin/php to get an extra php version?","timestampISO":"2021-02-26T00:08:57.135Z","lastposttimeISO":"2021-03-04T20:40:06.975Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"9374","username":"mgomez-tubs","fullname":"","userslug":"mgomez-tubs","reputation":"0","postcount":"2","picture":"","signature":"","banned":"0","status":"offline","icon:text":"M","icon:bgColor":"#795548"},"teaser":{"pid":"9445","uid":"9374","timestamp":"1614298137135","tid":"2339","content":"<p>I assumed it would work, and it does except when the php.ini file gets misteriously removed after pressing Start All.... is there something I can do to prevent that? If i replace the php.ini after &quot;Star All&quot; it will does work fine.<\/p>\n<p>BTW Im using the portable Laragon installation<\/p>\n","user":{"uid":"9374","username":"mgomez-tubs","userslug":"mgomez-tubs","picture":"","icon:text":"M","icon:bgColor":"#795548"},"timestampISO":"2021-02-26T00:08:57.135Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":15},{"tid":"815","uid":"2557","cid":"7","mainPid":"3656","title":"<span class=\"answered\"><i class=\"fa fa-question-circle\"><\/i> Solved<\/span> Mongodb Addon for Laragon","slug":"815/mongodb-addon-for-laragon","timestamp":"1516167962524","lastposttime":"1613119056267","postcount":"11","viewcount":"20773","locked":false,"deleted":false,"pinned":false,"isQuestion":"1","isSolved":"1","teaserPid":"9417","titleRaw":"Mongodb Addon for Laragon","timestampISO":"2018-01-17T05:46:02.524Z","lastposttimeISO":"2021-02-12T08:37:36.267Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"2557","username":"balaji00710","fullname":"","userslug":"balaji00710","reputation":"0","postcount":"3","picture":"","signature":"","banned":"0","status":"offline","icon:text":"B","icon:bgColor":"#2196f3"},"teaser":{"pid":"3656","uid":"2557","timestamp":"1516167962524","tid":"815","content":"<p>Am using the laragon php stack...But i need to use Mongodb along with this stack...So is there any addon available for this stack<\/p>\n","user":{"uid":"2557","username":"balaji00710","userslug":"balaji00710","picture":"","icon:text":"B","icon:bgColor":"#2196f3"},"timestampISO":"2018-01-17T05:46:02.524Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":16},{"tid":"2321","uid":"5585","cid":"7","mainPid":"9405","title":"upgrade to laravel 8...","slug":"2321/upgrade-to-laravel-8","timestamp":"1612840753586","lastposttime":"1612856614942","postcount":"2","viewcount":"2158","locked":false,"deleted":false,"pinned":false,"teaserPid":"9406","titleRaw":"upgrade to laravel 8...","timestampISO":"2021-02-09T03:19:13.586Z","lastposttimeISO":"2021-02-09T07:43:34.942Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"5585","username":"Alidad","fullname":"","userslug":"alidad","reputation":"0","postcount":"4","picture":"","signature":"","banned":"0","status":"offline","icon:text":"A","icon:bgColor":"#e91e63"},"teaser":{"pid":"9405","uid":"5585","timestamp":"1612840753586","tid":"2321","content":"<p>hi, does anyone tell me how can I upgrade the latest version of laravel 8, currently my laragon showing using laravel 7.2?<br />\nmany thanks.<br />\nAM<\/p>\n","user":{"uid":"5585","username":"Alidad","userslug":"alidad","picture":"","icon:text":"A","icon:bgColor":"#e91e63"},"timestampISO":"2021-02-09T03:19:13.586Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":17},{"tid":"973","uid":"3077","cid":"7","mainPid":"4425","title":"laragon updating to MySQL 8 not working","slug":"973/laragon-updating-to-mysql-8-not-working","timestamp":"1527684915029","lastposttime":"1611540957663","postcount":"11","viewcount":"14203","locked":false,"deleted":false,"pinned":false,"teaserPid":"9345","titleRaw":"laragon updating to MySQL 8 not working","timestampISO":"2018-05-30T12:55:15.029Z","lastposttimeISO":"2021-01-25T02:15:57.663Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"3077","username":"Bsienn Khan","fullname":"","userslug":"bsienn-khan","reputation":"0","postcount":"5","picture":"","signature":"","banned":"0","status":"offline","icon:text":"B","icon:bgColor":"#673ab7"},"teaser":{"pid":"4425","uid":"3077","timestamp":"1527684915029","tid":"973","content":"<p>I Installed Laragon 3.2.3 (Also tried with 3.1 as well)<br />\nI updated to latest mysql 8 from the following link in pic<\/p>\n<p><\/p>\n<p>But I get error after switching to new mysql and starting it.<\/p>\n<p><a href=\"/uploads/files/1527594584236-mysqllog.txt\">0_1527594583748_mysqllog.txt<\/a><\/p>\n","user":{"uid":"3077","username":"Bsienn Khan","userslug":"bsienn-khan","picture":"","icon:text":"B","icon:bgColor":"#673ab7"},"timestampISO":"2018-05-30T12:55:15.029Z","index":1},"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":18},{"tid":"2274","uid":"9060","cid":"7","mainPid":"9264","title":"[[topic:topic_is_deleted]]","slug":"2274","timestamp":"1608611646013","lastposttime":"1608611646013","postcount":"1","viewcount":"2","locked":false,"deleted":true,"pinned":false,"isQuestion":"1","isSolved":"0","titleRaw":"PHP8.0 installatin error","timestampISO":"2020-12-22T04:34:06.013Z","lastposttimeISO":"2020-12-22T04:34:06.013Z","category":{"cid":"7","name":"Installation","slug":"7/installation","icon":"fa-comments","image":null,"bgColor":"#A16946","color":"#fff","disabled":false},"user":{"uid":"9060","username":"furiousjayed","fullname":"","userslug":"furiousjayed","reputation":"0","postcount":"1","picture":"","signature":"","banned":"0","status":"offline","icon:text":"F","icon:bgColor":"#3f51b5"},"teaser":null,"tags":[],"isOwner":false,"ignored":false,"unread":true,"bookmark":null,"unreplied":false,"icons":[],"index":19,"noAnchor":true}],"nextStart":20,"isIgnored":false,"breadcrumbs":[{"text":"[[global:home]]","url":"/"},{"text":"Documents","url":"/category/6/documents"},{"text":"Installation","url":"/category/7/installation"}],"privileges":{"topics:create":false,"topics:read":true,"read":true,"cid":"7","uid":0,"editable":false,"view_deleted":false,"isAdminOrMod":false},"showSelect":false,"feeds:disableRSS":false,"rssFeedUrl":"/category/7.rss","title":"Installation","pagination":{"rel":[{"rel":"next","href":"https://forum.laragon.org/category/7/installation?page=2"}],"pages":[{"page":1,"active":true,"qs":"page=1"},{"page":2,"active":false,"qs":"page=2"},{"page":3,"active":false,"qs":"page=3"},{"page":4,"active":false,"qs":"page=4"},{"page":5,"active":false,"qs":"page=5"}],"currentPage":1,"pageCount":5,"prev":{"page":1,"active":false,"qs":"page=1"},"next":{"page":2,"active":true,"qs":"page=2"}},"loggedIn":false,"relative_path":"","template":{"name":"category","category":true},"url":"/category/7/installation","bodyClass":"page-category page-category-7 page-category-installation"}</script>

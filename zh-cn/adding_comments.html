@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Adding Comments | Laragon - portable, isolated, fast & powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby.</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="microservices, nodejs, javascript">
+	<meta name="robots" content="index, follow">
+  <!-- Canonical links -->
+  <link rel="canonical" href="">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="https://laragon.org/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://laragon.org/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://laragon.org/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://laragon.org/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://laragon.org/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://laragon.org/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://laragon.org/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://laragon.org/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="https://laragon.org/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://laragon.org/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://laragon.org/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/moleculer.css -->
+  
+<link rel="stylesheet" href="static/css/moleculer.css">
+
+  <!-- endbuild -->
+  <link href="static/css/css.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/docsearch.min.css">
+  <!-- RSS 
+  <link rel="alternate" href="/atom.xml" title="Laragon - portable, isolated, fast & powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby.">
+  -->
+  <!-- Open Graph -->
+  <meta name="description" content="Most blogs allow the reader to interact with the content by posting comments. Let’s add some simple comment functionality. Designing the Comment ModelFirst, we need to brainstorm what a comment is…wha">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Adding Comments">
+<meta property="og:url" content="https://laragon.org/rails/adding_comments">
+<meta property="og:site_name" content="Laragon - portable, isolated, fast &amp; powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby.">
+<meta property="og:description" content="Most blogs allow the reader to interact with the content by posting comments. Let’s add some simple comment functionality. Designing the Comment ModelFirst, we need to brainstorm what a comment is…wha">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-03-01T09:46:09.443Z">
+<meta property="article:modified_time" content="2019-03-01T09:46:09.443Z">
+<meta property="article:author" content="leokhoa">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="leovn">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-617943-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  <!-- Github Button -->
+  <script async="" defer="" src="static/js/buttons.js"></script>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="index.html" id="logo">Laragon</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="index1.html" class="main-nav-link">Docs</a>
+	<!--
+      <a href="https://github.com/leokhoa/laragon" target="_blank" rel="noopener" class="main-nav-link">Github</a>
+      <div id="search-input-wrap" class="on">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+	-->
+	 <a href="index2.html" class="main-nav-link">Why Laragon?</a>
+    <a href="index3.html" class="main-nav-link">Testimonials</a>
+    <a href="index4.html" class="main-nav-link">Download</a>
+    <a href="index5.html" class="main-nav-link">About</a>
+    <a href="index6.html" target="_blank" rel="noopener" class="main-nav-link">Community</a>
+    
+   
+    
+
+
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="">
+        
+          <option value="en" selected="">English</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+  <div id="container">
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope="" itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Adding Comments</h1>
+                <a href="javascript:;" target="_blank" rel="noopener" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>Most blogs allow the reader to interact with the content by posting comments. Let’s add some simple comment functionality.</p>
+<h3 id="Designing-the-Comment-Model" class="article-heading"><a href="#Designing-the-Comment-Model" class="headerlink" title="Designing the Comment Model"></a>Designing the Comment Model<a class="article-anchor" href="#Designing-the-Comment-Model" aria-hidden="true"></a></h3><p>First, we need to brainstorm what a comment <em>is</em>…what kinds of data does it have…</p>
+<ul>
+<li>It’s attached to an article</li>
+<li>It has an author name</li>
+<li>It has a body</li>
+</ul>
+<p>With that understanding, let’s create a <code>Comment</code> model. Switch over to your terminal and enter this line:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rails generate model Comment author_name:string body:text article:references</span><br></pre></td></tr></table></figure>
+<p>We’ve already gone through what files this generator creates, we’ll be most interested in the migration file and the <code>comment.rb</code>.</p>
+<h3 id="Setting-up-the-Migration" class="article-heading"><a href="#Setting-up-the-Migration" class="headerlink" title="Setting up the Migration"></a>Setting up the Migration<a class="article-anchor" href="#Setting-up-the-Migration" aria-hidden="true"></a></h3><p>Open the migration file that the generator created,<br><code>db/migrate/some-timestamp_create_comments.rb</code>. Let’s see the fields that were<br>added:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CreateComments</span> &lt; ActiveRecord::Migration[5.1] </span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">change</span>                                        </span></span><br><span class="line">    create_table <span class="symbol">:comments</span> <span class="keyword">do</span> <span class="params">|t|</span>                   </span><br><span class="line">      t.string <span class="symbol">:author_name</span>                         </span><br><span class="line">      t.text <span class="symbol">:body</span>                                  </span><br><span class="line">      t.references <span class="symbol">:article</span>, <span class="symbol">foreign_key:</span> <span class="literal">true</span>      </span><br><span class="line">                                                    </span><br><span class="line">      t.timestamps                                  </span><br><span class="line">    <span class="keyword">end</span>                                             </span><br><span class="line">  <span class="keyword">end</span>                                               </span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>Once that’s complete, go to your terminal and run the migration:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rake db:migrate</span><br></pre></td></tr></table></figure>
+<h3 id="Relationships" class="article-heading"><a href="#Relationships" class="headerlink" title="Relationships"></a>Relationships<a class="article-anchor" href="#Relationships" aria-hidden="true"></a></h3><p>The power of SQL databases is the ability to express relationships between elements of data. We can join together the information about an order with the information about a customer. Or in our case here, join together an article in the <code>articles</code> table with its comments in the <code>comments</code> table. We do this by using foreign keys.</p>
+<p>Foreign keys are a way of marking one-to-one and one-to-many relationships. An article might have zero, five, or one hundred comments. But a comment only belongs to one article. These objects have a one-to-many relationship – one article connects to many comments.</p>
+<p>Part of the big deal with Rails is that it makes working with these relationships very easy. When we created the migration for comments we started with a <code>references</code> field named <code>article</code>. The Rails convention for a one-to-many relationship:</p>
+<ul>
+<li>the objects on the “many” end should have a foreign key referencing the “one” object.</li>
+<li>that foreign key should be titled with the name of the “one” object, then an underscore, then “id”.</li>
+</ul>
+<p>In this case one article has many comments, so each comment has a field named <code>article_id</code>.</p>
+<p>Following this convention will get us a lot of functionality “for free.”  Open your <code>app/models/comment.rb</code> and check it out:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Comment</span> &lt; ActiveRecord::Base</span></span><br><span class="line">  belongs_to <span class="symbol">:article</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>The reason this <code>belongs_to</code> field already exists is because when we generated the Comment model, we included this line: <code>article:references</code>. What that does is tell Rails that we want this model to <em>reference</em> the Article model, thus creating a one-way relationship from Comment to Article. You can see this in action in our migration on the line <code>t.references :article</code>.</p>
+<p>A comment relates to a single article, it “belongs to” an article. We then want to declare the other side of the relationship inside <code>app/models/article.rb</code> like this:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Article</span> &lt; ActiveRecord::Base</span></span><br><span class="line">  has_many <span class="symbol">:comments</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>Unlike how <code>belongs_to :article</code> was implemented for us on the creation of the Comment model because of the references, the <code>has_many :comments</code> relationship must be entered in <strong><em>manually</em></strong>.</p>
+<p>Now an article “has many” comments, and a comment “belongs to” an article. We have explained to Rails that these objects have a one-to-many relationship.</p>
+<h3 id="Testing-in-the-Console" class="article-heading"><a href="#Testing-in-the-Console" class="headerlink" title="Testing in the Console"></a>Testing in the Console<a class="article-anchor" href="#Testing-in-the-Console" aria-hidden="true"></a></h3><p>Let’s use the console to test how this relationship works in code. If you don’t have a console open, go to your terminal and enter <code>rails console</code> from your project directory. If you have a console open already, enter the command <code>reload!</code> to refresh any code changes.</p>
+<p>Run the following commands one at a time and observe the output:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">article = Article.first</span><br><span class="line">article.comments</span><br><span class="line">Comment.new</span><br><span class="line">article.comments.new</span><br><span class="line">article.comments</span><br></pre></td></tr></table></figure>
+<p>When you called the <code>comments</code> method on object <code>article</code>, it gave you back a blank array because that article doesn’t have any comments. When you executed <code>Comment.new</code> it gave you back a blank Comment object with those fields we defined in the migration.</p>
+<p>But, if you look closely, when you did <code>article.comments.new</code> the comment object you got back wasn’t quite blank – it has the <code>article_id</code> field already filled in with the ID number of article <code>article</code>. Additionally, the following (last) call to <code>article.comments</code> shows that the new comment object has already been added to the in-memory collection for the <code>article</code> article object.</p>
+<p>Try creating a few comments for that article like this:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">comment = article.comments.new</span><br><span class="line">comment.author_name = &quot;Daffy Duck&quot;</span><br><span class="line">comment.body = &quot;I think this article is thhh-thhh-thupid!&quot;</span><br><span class="line">comment.save</span><br><span class="line">new_comment = article.comments.create(author_name: &quot;Chewbacca&quot;, body: &quot;RAWR!&quot;)</span><br></pre></td></tr></table></figure>
+<p>For the first comment, <code>comment</code>, I used a series of commands like we’ve done before. For the second comment, <code>new_comment</code>, I used the <code>create</code> method. <code>new</code> doesn’t send the data to the database until you call <code>save</code>. With <code>create</code> you build and save to the database all in one step.</p>
+<p>Now that you’ve created a few comments, try executing <code>article.comments</code> again. Did your comments all show up?  When I did it, only one comment came back. The console tries to minimize the number of times it talks to the database, so sometimes if you ask it to do something it’s already done, it’ll get the information from the cache instead of really asking the database – giving you the same answer it gave the first time. That can be annoying. To force it to clear the cache and lookup the accurate information, try this:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">article.reload</span><br><span class="line">article.comments</span><br></pre></td></tr></table></figure>
+<p>You’ll see that the article has associated comments. Now we need to integrate them into the article display.</p>
+<h3 id="Displaying-Comments-for-an-Article" class="article-heading"><a href="#Displaying-Comments-for-an-Article" class="headerlink" title="Displaying Comments for an Article"></a>Displaying Comments for an Article<a class="article-anchor" href="#Displaying-Comments-for-an-Article" aria-hidden="true"></a></h3><p>We want to display any comments underneath their parent article. Open <code>app/views/articles/show.html.erb</code> and add the following lines right before the link to the articles list:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;h3&gt;Comments&lt;/h3&gt;</span><br><span class="line">&lt;%=<span class="ruby"> render <span class="symbol">partial:</span> <span class="string">'articles/comment'</span>, <span class="symbol">collection:</span> @article.comments.reverse </span>%&gt;</span><br></pre></td></tr></table></figure>
+<p>This renders a partial named <code>&quot;comment&quot;</code> and that we want to do it once for each element in the collection <code>@article.comments</code>. We saw in the console that when we call the <code>.comments</code> method on an article we’ll get back an array of its associated comment objects. This render line will pass each element of that array one at a time into the partial named <code>&quot;comment&quot;</code>. Now we need to create the file <code>app/views/articles/_comment.html.erb</code> and add this code:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;h4&gt;Comment by &lt;%=<span class="ruby"> comment.author_name </span>%&gt;&lt;/h4&gt;</span><br><span class="line">  &lt;p class="comment"&gt;&lt;%=<span class="ruby"> comment.body </span>%&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>Display one of your articles where you created the comments, and they should all show up.</p>
+<h3 id="Web-Based-Comment-Creation" class="article-heading"><a href="#Web-Based-Comment-Creation" class="headerlink" title="Web-Based Comment Creation"></a>Web-Based Comment Creation<a class="article-anchor" href="#Web-Based-Comment-Creation" aria-hidden="true"></a></h3><p>Good start, but our users can’t get into the console to create their comments. We’ll need to create a web interface.</p>
+<h4 id="Building-a-Comment-Form-Partial" class="article-heading"><a href="#Building-a-Comment-Form-Partial" class="headerlink" title="Building a Comment Form Partial"></a>Building a Comment Form Partial<a class="article-anchor" href="#Building-a-Comment-Form-Partial" aria-hidden="true"></a></h4><p>The lazy option would be to add a “New Comment” link to the article <code>show</code> page. A user would read the article, click the link, go to the new comment form, enter their comment, click save, and return to the article.</p>
+<p>But, in reality, we expect to enter the comment directly on the article page. Let’s look at how to embed the new comment form onto the article <code>show</code>.</p>
+<p>Just above the “Back to Articles List” in the articles <code>show.html.erb</code>:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;%=<span class="ruby"> render <span class="symbol">partial:</span> <span class="string">'comments/form'</span> </span>%&gt;</span><br></pre></td></tr></table></figure>
+<p>This is expecting a file <code>app/views/comments/_form.html.erb</code>, so create the <code>app/views/comments/</code> directory with the <code>_form.html.erb</code> file, and add this starter content:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;h3&gt;Post a Comment&lt;/h3&gt;</span><br><span class="line">&lt;p&gt;(Comment form will go here)&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>Look at an article in your browser to make sure that partial is showing up. Then we can start figuring out the details of the form.</p>
+<h4 id="In-the-ArticlesController" class="article-heading"><a href="#In-the-ArticlesController" class="headerlink" title="In the ArticlesController"></a>In the <code>ArticlesController</code><a class="article-anchor" href="#In-the-ArticlesController" aria-hidden="true"></a></h4><p>First look in your <code>articles_controller.rb</code> for the <code>new</code> method.</p>
+<p>Remember how we created a blank <code>Article</code> object so Rails could figure out which fields an article has?  We need to do the same thing before we create a form for the <code>Comment</code>.</p>
+<p>But when we view the article and display the comment form we’re not running the article’s <code>new</code> method, we’re running the <code>show</code> method. So we’ll need to create a blank <code>Comment</code> object inside that <code>show</code> method like this:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">@comment = Comment.new</span><br><span class="line">@comment.article_id = @article.id</span><br></pre></td></tr></table></figure>
+<p>Due to the Rails’ mass-assignment protection, the <code>article_id</code> attribute of the new <code>Comment</code> object needs to be manually assigned with the <code>id</code> of the <code>Article</code>. Why do you think we use <code>Comment.new</code> instead of <code>@article.comments.new</code>?</p>
+<h4 id="Improving-the-Comment-Form" class="article-heading"><a href="#Improving-the-Comment-Form" class="headerlink" title="Improving the Comment Form"></a>Improving the Comment Form<a class="article-anchor" href="#Improving-the-Comment-Form" aria-hidden="true"></a></h4><p>Now we can create a form inside our <code>comments/_form.html.erb</code> partial like this:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;h3&gt;Post a Comment&lt;/h3&gt;</span><br><span class="line"></span><br><span class="line">&lt;%=<span class="ruby"> form_for [ @article, @comment ] <span class="keyword">do</span> <span class="params">|f|</span> </span>%&gt;</span><br><span class="line">  &lt;p&gt;</span><br><span class="line">    &lt;%=<span class="ruby"> f.label <span class="symbol">:author_name</span> </span>%&gt;&lt;br/&gt;</span><br><span class="line">    &lt;%=<span class="ruby"> f.text_field <span class="symbol">:author_name</span> </span>%&gt;</span><br><span class="line">  &lt;/p&gt;</span><br><span class="line">  &lt;p&gt;</span><br><span class="line">    &lt;%=<span class="ruby"> f.label <span class="symbol">:body</span> </span>%&gt;&lt;br/&gt;</span><br><span class="line">    &lt;%=<span class="ruby"> f.text_area <span class="symbol">:body</span> </span>%&gt;</span><br><span class="line">  &lt;/p&gt;</span><br><span class="line">  &lt;p&gt;</span><br><span class="line">    &lt;%=<span class="ruby"> f.submit <span class="string">'Submit'</span> </span>%&gt;</span><br><span class="line">  &lt;/p&gt;</span><br><span class="line">&lt;%<span class="ruby"> <span class="keyword">end</span> </span>%&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="Trying-the-Comment-Form" class="article-heading"><a href="#Trying-the-Comment-Form" class="headerlink" title="Trying the Comment Form"></a>Trying the Comment Form<a class="article-anchor" href="#Trying-the-Comment-Form" aria-hidden="true"></a></h4><p>Save and refresh your web browser and you’ll get an error like this:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Showing C:/laragon/www/blogger/app/views/comments/_form.html.erb where line #2 raised:</span><br><span class="line"></span><br><span class="line">undefined method `article_comments_path&apos; for #&lt;#&lt;Class:0x0000000e990828&gt;:0x0000000e7c68d0&gt;</span><br></pre></td></tr></table></figure>
+<p>The <code>form_for</code> helper is trying to build the form so that it submits to <code>article_comments_path</code>. That’s a helper which we expect to be created by the router, but we haven’t told the router anything about <code>Comments</code> yet. Open <code>config/routes.rb</code> and update your article to specify comments as a sub-resource.</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">resources <span class="symbol">:articles</span> <span class="keyword">do</span></span><br><span class="line">  resources <span class="symbol">:comments</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>Then refresh your browser and your form should show up. Try filling out the comments form and click SUBMIT – you’ll get an error about <code>uninitialized constant CommentsController</code>.</p>
+<div class="note"><br>  <p>Did you figure out why we aren’t using <code>@article.comments.new</code>? If you want, edit the <code>show</code> action and replace <code>@comment = Comment.new</code> with <code>@comment = @article.comments.new</code>. Refresh the browser. What do you see?</p><br>  <p>For me, there is an extra empty comment at the end of the list of comments. That is due to the fact that <code>@article.comments.new</code> has added the new <code>Comment</code> to the in-memory collection for the <code>Article</code>. Don’t forget to change this back.</p><br></div>
+
+<h4 id="Creating-a-Comments-Controller" class="article-heading"><a href="#Creating-a-Comments-Controller" class="headerlink" title="Creating a Comments Controller"></a>Creating a Comments Controller<a class="article-anchor" href="#Creating-a-Comments-Controller" aria-hidden="true"></a></h4><p>Just like we needed an <code>articles_controller.rb</code> to manipulate our <code>Article</code> objects, we’ll need a <code>comments_controller.rb</code>.</p>
+<p>Switch over to your terminal to generate it:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rails generate controller comments</span><br></pre></td></tr></table></figure>
+<h4 id="Writing-CommentsController-create" class="article-heading"><a href="#Writing-CommentsController-create" class="headerlink" title="Writing CommentsController.create"></a>Writing <code>CommentsController.create</code><a class="article-anchor" href="#Writing-CommentsController-create" aria-hidden="true"></a></h4><p>The comment form is attempting to create a new <code>Comment</code> object which triggers the <code>create</code> action. How do we write a <code>create</code>?</p>
+<p>You can cheat by looking at the <code>create</code> method in your <code>articles_controller.rb</code>. For your <code>comments_controller.rb</code>, the instructions should be the same just replace <code>Article</code> with <code>Comment</code>.</p>
+<p>There is one tricky bit, though! We need to assign the article id to our comment like this:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">create</span></span></span><br><span class="line">  @comment = Comment.new(comment_params)</span><br><span class="line">  @comment.article_id = params[<span class="symbol">:article_id</span>]</span><br><span class="line"></span><br><span class="line">  @comment.save</span><br><span class="line"></span><br><span class="line">  redirect_to article_path(@comment.article)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">comment_params</span></span></span><br><span class="line">  params.<span class="keyword">require</span>(<span class="symbol">:comment</span>).permit(<span class="symbol">:author_name</span>, <span class="symbol">:body</span>)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<h4 id="After-Creation" class="article-heading"><a href="#After-Creation" class="headerlink" title="After Creation"></a>After Creation<a class="article-anchor" href="#After-Creation" aria-hidden="true"></a></h4><p>As a user, imagine you write a witty comment, click save, then what would you expect? Probably to see the article page, maybe automatically scrolling down to your comment.</p>
+<p>At the end of our <code>create</code> action in <code>CommentsController</code>, how do we handle the redirect? Instead of showing them the single comment, let’s go back to the article page:</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">redirect_to article_path(@comment.article)</span><br></pre></td></tr></table></figure>
+<p>Recall that <code>article_path</code> needs to know <em>which</em> article we want to see. We might not have an <code>@article</code> object in this controller action, but we can find the <code>Article</code> associated with this <code>Comment</code> by calling <code>@comment.article</code>.</p>
+<p>Test out your form to create another comment now – and it should work!</p>
+<h3 id="Cleaning-Up" class="article-heading"><a href="#Cleaning-Up" class="headerlink" title="Cleaning Up"></a>Cleaning Up<a class="article-anchor" href="#Cleaning-Up" aria-hidden="true"></a></h3><p>We’ve got some decent comment functionality, but there are a few things we should add and tweak.</p>
+<h4 id="Comments-Count" class="article-heading"><a href="#Comments-Count" class="headerlink" title="Comments Count"></a>Comments Count<a class="article-anchor" href="#Comments-Count" aria-hidden="true"></a></h4><p>Let’s make it so where the view template has the “Comments” header it displays how many comments there are, like “Comments (3)”. Open up your article’s <code>show.html.erb</code> and change the comments header so it looks like this:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;h3&gt;Comments (&lt;%=<span class="ruby"> @article.comments.size </span>%&gt;)&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="Form-Labels" class="article-heading"><a href="#Form-Labels" class="headerlink" title="Form Labels"></a>Form Labels<a class="article-anchor" href="#Form-Labels" aria-hidden="true"></a></h4><p>The comments form looks a little silly with “Author Name”. It should probably say “Your Name”, right?  To change the text that the label helper prints out, you pass in the desired text as a second parameter, like this:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;%=<span class="ruby"> f.label <span class="symbol">:author_name</span>, <span class="string">"Your Name"</span>  </span>%&gt;</span><br></pre></td></tr></table></figure>
+<p>Change your <code>comments/_form.html.erb</code> so it has labels “Your Name” and “Your Comment”.</p>
+<h4 id="Add-a-Timestamp-to-the-Comment-Display" class="article-heading"><a href="#Add-a-Timestamp-to-the-Comment-Display" class="headerlink" title="Add a Timestamp to the Comment Display"></a>Add a Timestamp to the Comment Display<a class="article-anchor" href="#Add-a-Timestamp-to-the-Comment-Display" aria-hidden="true"></a></h4><p>We should add something about when the comment was posted. Rails has a really neat helper named <code>distance_of_time_in_words</code> which takes two dates and creates a text description of their difference like “32 minutes later”, “3 months later”, and so on.</p>
+<p>You can use it in your <code>_comment.html.erb</code> partial like this:</p>
+<figure class="highlight erb"><table><tr><td class="code"><pre><span class="line">&lt;%<span class="ruby"> <span class="keyword">if</span> comment.created_at != <span class="literal">nil</span>  </span>%&gt;  </span><br><span class="line">&lt;p&gt;Posted &lt;%=<span class="ruby"> distance_of_time_in_words(comment.article.created_at, comment.created_at) </span>%&gt; later&lt;/p&gt;</span><br><span class="line">&lt;%<span class="ruby"> <span class="keyword">end</span> </span>%&gt;</span><br></pre></td></tr></table></figure>
+<p>With that, you’re done!</p>
+<h4 id="Time-to-Save-to-GitHub-Again" class="article-heading"><a href="#Time-to-Save-to-GitHub-Again" class="headerlink" title="Time to Save to GitHub Again!"></a>Time to Save to GitHub Again!<a class="article-anchor" href="#Time-to-Save-to-GitHub-Again" aria-hidden="true"></a></h4><p>Now that the comments feature has been added push it up to GitHub:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;finish blog comments feature&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2019-03-01T09:46:09.443Z" itemprop="dateModified">Last updated: 2019-03-01</time>
+                <a href="form_based_workflow.html" class="article-footer-prev" title="Form-based Workflow"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="tagging.html" class="article-footer-next" title="Tagging"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Designing-the-Comment-Model"><span class="toc-text">Designing the Comment Model</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Setting-up-the-Migration"><span class="toc-text">Setting up the Migration</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Relationships"><span class="toc-text">Relationships</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Testing-in-the-Console"><span class="toc-text">Testing in the Console</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Displaying-Comments-for-an-Article"><span class="toc-text">Displaying Comments for an Article</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Web-Based-Comment-Creation"><span class="toc-text">Web-Based Comment Creation</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Building-a-Comment-Form-Partial"><span class="toc-text">Building a Comment Form Partial</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#In-the-ArticlesController"><span class="toc-text">In the ArticlesController</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Improving-the-Comment-Form"><span class="toc-text">Improving the Comment Form</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Trying-the-Comment-Form"><span class="toc-text">Trying the Comment Form</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Creating-a-Comments-Controller"><span class="toc-text">Creating a Comments Controller</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Writing-CommentsController-create"><span class="toc-text">Writing CommentsController.create</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#After-Creation"><span class="toc-text">After Creation</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cleaning-Up"><span class="toc-text">Cleaning Up</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Comments-Count"><span class="toc-text">Comments Count</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Form-Labels"><span class="toc-text">Form Labels</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Add-a-Timestamp-to-the-Comment-Display"><span class="toc-text">Add a Timestamp to the Comment Display</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Time-to-Save-to-GitHub-Again"><span class="toc-text">Time to Save to GitHub Again!</span></a></li></ol></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Build a Blog with Ruby on Rails</strong><a href="environment_setup.html" class="sidebar-link">Environment Setup</a><a href="up_and_running.html" class="sidebar-link">Up and Running</a><a href="form_based_workflow.html" class="sidebar-link">Form-based Workflow</a><a href="" class="sidebar-link current">Adding Comments</a><a href="tagging.html" class="sidebar-link">Tagging</a><a href="a_few_gems.html" class="sidebar-link">A Few Gems</a><a href="authentication.html" class="sidebar-link">Authentication</a><a href="extras.html" class="sidebar-link">Extras</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      Copyright &copy; 2020 - <a href="javascript:;" target="_blank">leokhoa</a><br>
+    </div>
+    <div id="footer-links">
+      <a href="javascript:;" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="javascript:;" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="index1.html" class="mobile-nav-link">Docs</a>
+      <li class="mobile-nav-item">
+        <a href="javascript:;" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Build a Blog with Ruby on Rails</strong><a href="environment_setup.html" class="mobile-nav-link">Environment Setup</a><a href="up_and_running.html" class="mobile-nav-link">Up and Running</a><a href="form_based_workflow.html" class="mobile-nav-link">Form-based Workflow</a><a href="" class="mobile-nav-link current">Adding Comments</a><a href="tagging.html" class="mobile-nav-link">Tagging</a><a href="a_few_gems.html" class="mobile-nav-link">A Few Gems</a><a href="authentication.html" class="mobile-nav-link">Authentication</a><a href="extras.html" class="mobile-nav-link">Extras</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="">
+      
+        <option value="en" selected="">English</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+
+<script src="static/js/lang_select.js"></script>
+
+
+<script src="static/js/scrollingelement.js"></script>
+
+
+<script src="static/js/toc.js"></script>
+
+
+<script src="static/js/mobile_nav.js"></script>
+
+<!-- endbuild -->
+<script src="static/js/retina.min.js" async=""></script>
+
+<!-- Algolia -->
+
+
+<!-- Particles -->
+
+<script src="static/js/particles.js"></script>
+
+
+<script type="text/javascript">
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 60,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.1,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 6,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.1,
+      "width": 2
+    },
+    "move": {
+      "enable": true,
+      "speed": 1.5,
+      "direction": "top",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+<!-- fastclick -->
+<script src="static/js/fastclick.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  FastClick.attach(document.body)
+}, false)
+</script>
+
+
+
+</body>
+</html>
